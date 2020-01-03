@@ -1,11 +1,18 @@
 h1 {
-    color: red;
-}
+    color: rgba(0, 200, 100, 0.8);
+    /*border-color: purple;*/
+    /*border-width: 5px;*/
+    /*border-style: solid;*/
 
-li {
-    color: green;
+    border: 2px dashed rgb(0, 200, 100, 0.8);
 }
 
 h4 {
-    color: purple;
+    background: lightcoral;
+}
+
+body {
+    background: pink;
+    /*background: url("https://i.pinimg.com/originals/bf/e0/ff/bfe0fff75f29c5bfab4cb116ba4b0d65.jpg");*/
+    /*background-size: cover;*/
 }
