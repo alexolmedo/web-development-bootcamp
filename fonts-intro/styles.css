@@ -1,9 +1,9 @@
 p {
-    font-family: Arial;
+    font-family: Merriweather;
 }
 
 h1 {
-    font-family: Georgia;
+    font-family: Cute Font;
 }
 
 body {
@@ -20,4 +20,28 @@ p {
 
 span {
     font-size: 2em;
+}
+
+p {
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: right;
+}
+
+p {
+    text-align: center;
+}
+
+p {
+    text-decoration: underline;
+}
+
+h1 {
+    text-decoration: line-through;
 }
