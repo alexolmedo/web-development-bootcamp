@@ -68,7 +68,8 @@
           <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
             <h2>MUSSEUM OF CANDY</h2>
             <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequuntur sint tempore?
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequuntur sint
+              tempore?
               A, accusamus accusantium adipisci architecto atque autem doloribus eaque eveniet facere incidunt iure
               laudantium magnam necessitatibus obcaecati officia qui quibusdam quidem quos repellat repudiandae saepe
               tempora tenetur. Alias commodi eius iusto officiis quis quod, ratione voluptate voluptatibus.</p>
@@ -82,7 +83,8 @@
           <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
             <h2>MUSSEUM OF CANDY</h2>
             <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequuntur sint tempore?
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequuntur sint
+              tempore?
               A, accusamus accusantium adipisci architecto atque autem doloribus eaque eveniet facere incidunt iure
               laudantium magnam necessitatibus obcaecati officia qui quibusdam quidem quos repellat repudiandae saepe
               tempora tenetur. Alias commodi eius iusto officiis quis quod, ratione voluptate voluptatibus.</p>
@@ -102,7 +104,8 @@
           <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
             <h2>MUSSEUM OF CANDY</h2>
             <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequuntur sint tempore?
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequuntur sint
+              tempore?
               A, accusamus accusantium adipisci architecto atque autem doloribus eaque eveniet facere incidunt iure
               laudantium magnam necessitatibus obcaecati officia qui quibusdam quidem quos repellat repudiandae saepe
               tempora tenetur. Alias commodi eius iusto officiis quis quod, ratione voluptate voluptatibus.</p>
@@ -123,6 +126,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
           integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
           crossorigin="anonymous"></script>
-
+  <script>
+      $(function () {
+          $(document).scroll(function () {
+              var $nav = $("#mainNavbar");
+              $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          })
+      })
+  </script>
 </body>
 </html>
