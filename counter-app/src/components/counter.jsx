@@ -17,15 +17,15 @@ class Counter extends Component {
 
   render () {
     return (
-      <React.Fragment>
+      <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
-          onClick={() => this.handleIncrement(product)}
+          onClick={() => this.handleIncrement({id: 1})}
           className="btn btn-secondary btn-sm"
         >
           Increment
         </button>
-      </React.Fragment>
+      </div>
     )
   }
 
