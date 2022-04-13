@@ -1,0 +1,139 @@
+/*.signup-form_container li{
+    width:49% !important;
+}
+
+.signup-form_container .slds-tabs_default__overflow-button{
+    display:none !important;
+}*/
+
+#kdp-hero .bgImage {
+    background-image: url('/sfsites/c/file-asset/heromobile2xpng') !important;
+}
+
+@media (min-width: 768px) {
+    #kdp-hero .bgImage {
+        background-image: url('/sfsites/c/file-asset/HEROIMAGE2xpng') !important;
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.detailsData:empty:before {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-top: 4px solid #900D2C;
+    border-right: 2px solid transparent;
+    animation: spinner .6s linear infinite;
+}
+
+.slds-form-element__control[c-kdpUserProfile_kdpUserProfile] > a[title="Change Password"][c-kdpUserProfile_kdpUserProfile] {
+    font-size: 0.8rem !important;
+}
+
+.button-wrapper[c-kdpUserProfile_kdpUserProfile] {
+    margin-top: 40px;
+}
+
+
+/* Custom styles for Berries and Cream */
+.contentBlockSection[style*="https://stg-my.drpepper.com/cms/delivery/media/MCWS2B2GLERBFOXMJ7Z2NH2I4S5E"] h2 {
+    max-width: 500px
+}
+
+body.comm-page-custom-test2 .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MCWS2B2GLERBFOXMJ7Z2NH2I4S5E), rgb(220, 30, 165) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+body.comm-page-custom-test2 .btn-join {
+    transition: 0.2s all ease-in-out;
+}
+
+body.comm-page-custom-test2 .btn-join:hover {
+    filter: saturate(70%);
+}
+
+@media (max-width: 768px) {
+    body.comm-page-custom-cherry-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+        height: 25vh !important;
+    }
+}
+
+body.comm-page-custom-cherry-and-cream .imgScroll:hover {
+    cursor: pointer;
+}
+
+/***************************************** Custom styles for Dark Berry *********************************************/
+body.comm-page-custom-barrysdeservedarkberry #body-content,
+body.comm-page-custom-thank-you-berry-much #body-content,
+body.comm-page-custom-sold-out-berry #body-content {
+    background-color: #2b338c;
+}
+
+body.comm-page-custom-thank-you-berry-much #body-content {
+    background-color: #2b338c;
+    display: flex;
+    align-items: center;
+}
+
+
+body.comm-page-custom-barrysdeservedarkberry .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MC4RYE5GSKT5DM5GTKCPG2KUZXRQ), #2b338c !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+body.comm-page-custom-barrysdeservedarkberry .content[c-kdpHeroBase_kdpHeroBase] {
+    padding-bottom: 40%;
+}
+
+body.comm-page-custom-barrysdeservedarkberry h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+    font-size: 25px !important;
+    line-height: 1 !important;
+}
+
+body.comm-page-custom-barrysdeservedarkberry h1.slds-var-m-top_medium {
+    margin-top: 10px !important;
+    margin-bottom: 25px !important;
+    margin-left: -3px !important;
+    font-size: 62px !important;
+}
+
+@media (min-width: 768px) {
+    body.comm-page-custom-barrysdeservedarkberry .kdp-hero-bg {
+        background-position: center right !important;
+    }
+
+    body.comm-page-custom-barrysdeservedarkberry .content[c-kdpHeroBase_kdpHeroBase] {
+        padding-bottom: 20%;
+    }
+
+    body.comm-page-custom-barrysdeservedarkberry h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+        font-size: 38.5px !important;
+    }
+
+    body.comm-page-custom-barrysdeservedarkberry h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+        font-size: 38.5px !important;
+    }
+
+    body.comm-page-custom-barrysdeservedarkberry h1.slds-var-m-top_medium {
+        margin-top: 10px !important;
+        margin-bottom: 25px !important;
+        margin-left: -5px !important;
+        font-size: 97px !important;
+    }
+
+    body.comm-page-custom-barrysdeservedarkberry p.slds-var-m-top_small.regular-text {
+        max-width: 470px;
+    }
+}
