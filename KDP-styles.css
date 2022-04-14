@@ -107,6 +107,9 @@ body.comm-page-custom-barrysdeservedarkberry h1.slds-var-m-top_medium {
     margin-bottom: 25px !important;
     margin-left: -3px !important;
     font-size: 62px !important;
+    font-family: aktiv-grotesk-extended, sans-serif !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
 }
 
 @media (min-width: 768px) {
