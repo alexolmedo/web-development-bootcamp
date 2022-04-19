@@ -191,9 +191,15 @@ body.comm-page-custom-rewards-jurassic-world .kdp-hero-bg {
     background-position: top right !important;
 }
 
-body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase] {
     height: auto !important;
-    width: 50% !important;
+    width: 432px !important;
+}
+
+@media (min-width: 768px) {
+    body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpHeroBase_kdpHeroBase] {
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 767px) {
