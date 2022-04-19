@@ -42,8 +42,7 @@
     margin-top: 40px;
 }
 
-
-/* Custom styles for Berries and Cream */
+/*************************************** Custom styles for Berries and Cream ******************************************/
 .contentBlockSection[style*="https://stg-my.drpepper.com/cms/delivery/media/MCWS2B2GLERBFOXMJ7Z2NH2I4S5E"] h2 {
     max-width: 500px
 }
@@ -145,14 +144,40 @@ body.comm-page-custom-barrysdeservedarkberry form {
     width: 100%;
 }
 
-body.comm-page-custom-barrysdeservedarkberry form input:not(.kdp-button), body.comm-page-custom-barrysdeservedarkberry form textarea{
+body.comm-page-custom-barrysdeservedarkberry form input:not(.kdp-button), body.comm-page-custom-barrysdeservedarkberry form textarea {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
     min-height: 3rem;
 }
 
-body.comm-page-custom-barrysdeservedarkberry form select{
+body.comm-page-custom-barrysdeservedarkberry form select {
     margin-bottom: 1rem;
     min-height: 3rem;
+}
+
+/*************************************** Custom styles for Jurassic World ******************************************/
+body.comm-page-home .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MCM77KT34NDNBS7JZ2ATEU7H36W4), #2b338c !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top right !important;
+}
+
+body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kdpherobase_kdpherobase] {
+    color: #2b338c !important;
+}
+
+@media (max-width: 768px) {
+    body.comm-page-home .kdp-hero-bg {
+        background: url(https://stg-my.drpepper.com/cms/delivery/media/MCPYL4GPGBQZENPP636O5C5TLKYY), #2b338c !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: top right !important;
+    }
+
+    body.comm-page-home .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+        height: auto !important;
+        width: 100% !important;
+    }
 }
