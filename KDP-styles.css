@@ -111,6 +111,10 @@ body.comm-page-custom-barrysdeservedarkberry h1.slds-var-m-top_medium {
     font-style: normal !important;
 }
 
+body.comm-page-custom-barrysdeservedarkberry .g-recaptcha>div {
+    margin: auto;
+}
+
 @media (min-width: 768px) {
     body.comm-page-custom-barrysdeservedarkberry .kdp-hero-bg {
         background-position: center right !important;
