@@ -1,8 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <link rel="stylesheet" href="https://use.typekit.net/gwz6erc.css"/>
+  <link rel="stylesheet" href="https://use.typekit.net/gap7fnh.css"/>
+  <link href="/s/sfsites/c/resource/KDP_Assets/styles/global.css?220304" rel="stylesheet" type="text/css"/>
+
+  <link rel="shortcut icon" href="/sfsites/c/resource/DRP_FavIcon"/>
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@drpepper">
+  <meta property="og:site_name" content="Dr Pepper">
+  <meta property="og:type" content="website">
+  <!--<meta property="og:title" content="Pepper Perks">-->
+  <!--<meta property="og:url" content="https://stg-my.drpepper.com">-->
+  <!--<meta property="og:description" content="Love Dr Pepper? Also love free cool stuff? Sign up to earn free cool Dr Pepper stuff and a chance to win tickets to the College Football Playoff National Championship.">-->
+  <!--<meta property="og:image" content="/file-asset/Facebookpng?v=1">-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//tags.tiqcdn.com/utag/dpsg/drpepper-my-subdomain/qa/utag.sync.js"></script>
+  <!-- data layer -->
+  <script type="text/javascript">
+    if ((document.location.href).indexOf('https://stg-my.drpepper.com/s/berries-and-cream') > -1) {
+      window.location = 'https://www.drpepper.com/s/berries-and-cream'
+    }
+    var utag_data = {
+      event_type: '',
+      event_action: '',
+      event_label: '',
+      page_name: '',
+      page_category: '',
+      page_type: '',
+      event_category: '',
+      property_id: '',
+      tracking_id: '',
+      event_name: '',
+      geo_state: ''
+    }
+  </script>
+
+  <!-- stage / dev -->
+  <script type="text/javascript">
+    if (document.domain.indexOf('salesforce-communities.com') == -1) {
+      (function (a, b, c, d) {
+        a = 'https://tags.tiqcdn.com/utag/dpsg/drpepper-my-subdomain/qa/utag.js'
+        b = document
+        c = 'script'
+        d = b.createElement(c)
+        d.src = a
+        d.type = 'text/java' + c
+        d.async = true
+        a = b.getElementsByTagName(c)[0]
+        a.parentNode.insertBefore(d, a)
+      })()
+    }
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('kAnalytics', function (e) {
+      console.log('kAnalytics', JSON.stringify(e.detail))
+      if (e.detail.action == 'link_click') {
+        utag.link({
+          'event_name': 'internal_navigation',              // e.detail.eventName
+          'cta_component': e.detail.component,       // "c-kdp-hero-base"
+          'cta_classes': e.detail.classList,       // "primary-cta"
+          'cta_label': e.detail.text,            // "SIGN UP"
+          'cta_link': e.detail.href             // "/s/login/selfRegister"
+        })
+      } else if (e.detail.action == 'login_success' || e.detail.action == 'signup_complete') {
+        utag.link({
+          event_name: e.detail.action,
+          customer_email: e.detail.email
+        })
+      } else if (e.detail.action == 'dp_social_account_linked'
+        || e.detail.action == 'dp_social_account_revoked'
+        || e.detail.action == 'dp_new_post') {
+        utag.link({
+          event_name: e.detail.action,
+          detail: e.detail
+        })
+      } else if (e.detail.action == 'dp_user_profile_updated') {
+        utag.link({
+          event_name: 'dp_user_profile_updated',
+          favorite_flavors: e.detail.fields.Favorite_Flavors__c
+        })
+      }
+    })
+  </script>
+  <script>
+    document.addEventListener('kbodytheme', function (e) {
+      console.log(e.detail.themeColor)
+      if (e.detail.themeColor == 'kdpDarkTheme') {
+        document.body.classList.remove('kdpLightTheme')
+      } else if (e.detail.themeColor == 'kdpLightTheme') {
+        document.body.classList.add('kdpLightTheme')
+      }
+      //document.body.classList.add(e.detail.themeColor);
+    })
+  </script>
+  <style>
+      .tl_content {
+          margin: 0 auto;
+          padding: 2rem 0;
+          position: relative;
+          width: 100%;
+      }
+
+      .tl_content-heading {
+          position: absolute;
+          top: -120px;
+          width: 100%;
+      }
+
+      .tl_content-heading img,
+      .tl_content-section div > img {
+          width: 260px;
+      }
+
+      .tl_content-block {
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .tl_content-img {
+          margin-bottom: 1rem;
+          max-width: 312px;
+      }
+
+      .tl_content-content {
+          margin-bottom: 2rem;
+          max-width: 360px;
+      }
+
+      .tl_content-content h2 {
+          font: var(--font-weight_stronger) 1.375rem/1.375rem var(--font-header) !important;
+      }
+
+      .tl_content-prizes {
+          flex-direction: column;
+      }
+
+      .tl_content-prizes .slds-col {
+          flex-direction: column;
+          margin-bottom: 3rem;
+      }
+
+      .tl_content-prizes .slds-col:last-of-type {
+          margin-bottom: 0;
+      }
+
+      @media (min-width: 768px) {
+          .tl_content {
+              padding: 4rem 0;
+              max-width: 784px;
+          }
+
+          .tl_content-heading {
+              top: -140px;
+          }
+
+          .tl_content-heading img,
+          .tl_content-section div > img {
+              width: auto;
+          }
+
+          .tl_content-block {
+              text-align: left;
+          }
+
+          .tl_content-block,
+          .tl_content-prizes {
+              flex-direction: row;
+          }
+
+          .tl_content-prizes .slds-col {
+              margin-bottom: 0;
+          }
+      }
+
+      /* Tuition Finalists Style Tweaks */
+
+      .video-responsive {
+          overflow: hidden;
+          padding-bottom: 60%;
+          position: relative;
+          height: 544px;
+          width: 306px;
+      }
+
+      .video-responsive iframe {
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+      }
+
+      .champ-finalists-title {
+          font-size: 3.25rem !important;
+          line-height: 1 !important;
+          margin-top: 2.5rem;
+          text-align: center;
+          color: var(--color-maroon_dark);
+      }
+
+      .tl_content-content-finalists {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          max-width: 560px;
+      }
+
+      @media (min-width: 1024px) {
+          .tl_content-content-finalists {
+              margin-left: 55px;
+          }
+
+          @media (min-width: 1440px) {
+              .tl_content-content-finalists {
+                  margin-left: 115px;
+              }
+  </style>
+  <!--<script src="https://www.google.com/recaptcha/api.js"></script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var banner = document.createElement('div')
+      banner.style = 'z-index: 999999;background-color: yellow;padding: 2px;text-align: center;font-weight: bold;position: absolute;left: 0px;right: 0px;top: 0px;font-size: 12px;'
+      banner.innerHTML = 'PREVIEW ENVIRONMENT: STAGE'
+      document.body.appendChild(banner)
+    })
+  </script>
+  <script>
+    // Dark Berry recaptcha
+    if (window.location.pathname.includes('barrysdeservedarkberry')) {
+      setInterval(function () {
+        var response = document.getElementById('g-recaptcha-response')
+        if (response == null || response.value.trim() == '') {
+          var elems = JSON.parse(document.getElementsByName('captcha_settings')[0].value)
+          elems['ts'] = JSON.stringify(new Date().getTime())
+          document.getElementsByName('captcha_settings')[0].value = JSON.stringify(elems)
+        }
+      }, 500)
+    }
+  </script>
+  <script>
+    var grecaptchaReady = false
+    var onloadCallback = function () {
+      grecaptchaReady = true
+      if (window.location.pathname.includes('barrysdeservedarkberry')) {
+        setTimeout(function () {
+          grecaptcha.render(document.querySelector('.g-recaptcha'))
+        }, 1500)
+      }
+    }
+    var verifyCallback = function (token) {
+      document.dispatchEvent(new CustomEvent('grecaptchaVerified', { 'detail': { response: token } }))
+    }
+    var errorCallback = function () {
+      document.dispatchEvent(new Event('grecaptchaError'))
+    }
+    document.addEventListener('grecaptchaRender', function (e) {
+      onloadCallback = function () {
+        grecaptchaReady = true
+        grecaptcha.render(e.detail.element, {
+          'sitekey': '6Le02H4eAAAAAC3AaI302CDLWcHYOzqNBxqZTVtJ',
+          'callback': verifyCallback,
+          'error-callback': errorCallback,
+          'size': 'invisible',
+          'badge': e.detail.hasOwnProperty('badge') ? e.detail.badge : 'bottomright'
+        })
+
+      }
+      if (grecaptchaReady) {
+        onloadCallback()
+      }
+    })
+    document.addEventListener('grecaptchaReset', function () {
+      grecaptcha.reset()
+    })
+    document.addEventListener('grecaptchaExecute', function () {
+      console.log('grecaptcha running')
+      grecaptcha.execute()
+    })
+  </script>
+  <script src='https://www.google.com/recaptcha/api.js?render=explicit&onload=onloadCallback' async defer></script>
 </head>
 <body>
 
@@ -95,7 +375,8 @@
           <form action="https://pepperpack--stage.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8"
                 method="POST" style="line-height: 2">
 
-            <input type="hidden" name="captcha_settings" value='{"keyname":"Test","fallback":"true","orgId":"00D530000008fvL","ts":""}'/>
+            <input type="hidden" name="captcha_settings"
+                   value='{"keyname":"Test","fallback":"true","orgId":"00D530000008fvL","ts":""}'/>
             <input type="hidden" name="orgid" value="00D530000008fvL"/>
             <!-- update this link with Thank You page URL-->
             <input type="hidden" name="retURL" value="https://stg-my.drpepper.com/s/thank-you-berry-much"/>
