@@ -157,7 +157,7 @@ body.comm-page-custom-berries-and-cream .btn-join:hover {
 }
 
 /***************************************** Custom styles for Dark Berry *********************************************/
-body.comm-page-custom-barrysdeservedarkberry #body-content,
+body.comm-page-custom-dr-pepper4-barrys #body-content,
 body.comm-page-custom-thank-you-berry-much #body-content,
 body.comm-page-custom-sold-out-berry #body-content {
     background-color: #2b338c;
@@ -170,23 +170,23 @@ body.comm-page-custom-thank-you-berry-much #body-content {
 }
 
 
-body.comm-page-custom-barrysdeservedarkberry .kdp-hero-bg {
+body.comm-page-custom-dr-pepper4-barrys .kdp-hero-bg {
     background: url(https://stg-my.drpepper.com/cms/delivery/media/MC7FYPTCDDOZE3HKLUBAJK7T3XNI), #2b338c !important;
     background-position: bottom center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
 
-body.comm-page-custom-barrysdeservedarkberry .content[c-kdpHeroBase_kdpHeroBase] {
+body.comm-page-custom-dr-pepper4-barrys .content[c-kdpHeroBase_kdpHeroBase] {
     padding-bottom: 40%;
 }
 
-body.comm-page-custom-barrysdeservedarkberry h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
     font-size: 25px !important;
     line-height: 1 !important;
 }
 
-body.comm-page-custom-barrysdeservedarkberry h1.slds-var-m-top_medium {
+body.comm-page-custom-dr-pepper4-barrys h1.slds-var-m-top_medium {
     margin-top: 10px !important;
     margin-bottom: 25px !important;
     margin-left: -3px !important;
@@ -196,54 +196,54 @@ body.comm-page-custom-barrysdeservedarkberry h1.slds-var-m-top_medium {
     font-style: normal !important;
 }
 
-body.comm-page-custom-barrysdeservedarkberry .g-recaptcha > div {
+body.comm-page-custom-dr-pepper4-barrys .g-recaptcha > div {
     margin: auto;
 }
 
 @media (min-width: 768px) {
-    body.comm-page-custom-barrysdeservedarkberry .kdp-hero-bg {
+    body.comm-page-custom-dr-pepper4-barrys .kdp-hero-bg {
         background: url(https://stg-my.drpepper.com/cms/delivery/media/MC23NRIG3JGRDVBPCASNN2ESPU4A), #2b338c !important;
         background-position: bottom center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
     }
 
-    body.comm-page-custom-barrysdeservedarkberry .content[c-kdpHeroBase_kdpHeroBase] {
+    body.comm-page-custom-dr-pepper4-barrys .content[c-kdpHeroBase_kdpHeroBase] {
         padding-bottom: 20%;
     }
 
-    body.comm-page-custom-barrysdeservedarkberry h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+    body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
         font-size: 38.5px !important;
     }
 
-    body.comm-page-custom-barrysdeservedarkberry h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+    body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
         font-size: 38.5px !important;
     }
 
-    body.comm-page-custom-barrysdeservedarkberry h1.slds-var-m-top_medium {
+    body.comm-page-custom-dr-pepper4-barrys h1.slds-var-m-top_medium {
         margin-top: 10px !important;
         margin-bottom: 25px !important;
         margin-left: -5px !important;
         font-size: 94px !important;
     }
 
-    body.comm-page-custom-barrysdeservedarkberry p.slds-var-m-top_small.regular-text {
+    body.comm-page-custom-dr-pepper4-barrys p.slds-var-m-top_small.regular-text {
         max-width: 470px;
     }
 }
 
-body.comm-page-custom-barrysdeservedarkberry form {
+body.comm-page-custom-dr-pepper4-barrys form {
     width: 100%;
 }
 
-body.comm-page-custom-barrysdeservedarkberry form input:not(.kdp-button), body.comm-page-custom-barrysdeservedarkberry form textarea {
+body.comm-page-custom-dr-pepper4-barrys form input:not(.kdp-button), body.comm-page-custom-dr-pepper4-barrys form textarea {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
     min-height: 3rem;
 }
 
-body.comm-page-custom-barrysdeservedarkberry form select {
+body.comm-page-custom-dr-pepper4-barrys form select {
     margin-bottom: 1rem;
     min-height: 3rem;
 }
