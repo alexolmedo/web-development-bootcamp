@@ -247,4 +247,5 @@ body.comm-page-custom-dr-pepper4-barrys form input:not(.kdp-button), body.comm-p
 body.comm-page-custom-dr-pepper4-barrys form select {
     margin-bottom: 1rem;
     min-height: 3rem;
+    color: black !important;
 }
