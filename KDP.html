@@ -231,7 +231,7 @@
   </script>
   <script>
     // Dark Berry recaptcha
-    if (window.location.pathname.includes('barrysdeservedarkberry')) {
+    if (window.location.pathname.includes('DrPepper4Barrys')) {
       setInterval(function () {
         var response = document.getElementById('g-recaptcha-response')
         if (response == null || response.value.trim() == '') {
@@ -246,7 +246,7 @@
     var grecaptchaReady = false
     var onloadCallback = function () {
       grecaptchaReady = true
-      if (window.location.pathname.includes('barrysdeservedarkberry')) {
+      if (window.location.pathname.includes('DrPepper4Barrys')) {
         setTimeout(function () {
           grecaptcha.render(document.querySelector('.g-recaptcha'))
         }, 1500)

@@ -86,10 +86,10 @@ body.comm-page-custom-thank-you-berry-much #body-content {
 
 
 body.comm-page-custom-barrysdeservedarkberry .kdp-hero-bg {
-    background: url(https://stg-my.drpepper.com/cms/delivery/media/MC4RYE5GSKT5DM5GTKCPG2KUZXRQ), #2b338c !important;
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MC7FYPTCDDOZE3HKLUBAJK7T3XNI), #2b338c !important;
+    background-position: bottom center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background-position: center center !important;
 }
 
 body.comm-page-custom-barrysdeservedarkberry .content[c-kdpHeroBase_kdpHeroBase] {
@@ -117,7 +117,10 @@ body.comm-page-custom-barrysdeservedarkberry .g-recaptcha>div {
 
 @media (min-width: 768px) {
     body.comm-page-custom-barrysdeservedarkberry .kdp-hero-bg {
-        background-position: center right !important;
+        background: url(https://stg-my.drpepper.com/cms/delivery/media/MC23NRIG3JGRDVBPCASNN2ESPU4A), #2b338c !important;
+        background-position: bottom center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 
     body.comm-page-custom-barrysdeservedarkberry .content[c-kdpHeroBase_kdpHeroBase] {
