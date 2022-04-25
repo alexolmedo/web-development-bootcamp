@@ -1,0 +1,145 @@
+c-kdp-user-profile .wrapper{
+    padding-top:40px;
+}
+@media (min-width: 768px){
+    .packContent_content[c-packHomeMaster_packHomeMaster] {
+        margin-top: 200px !important;
+    }
+}
+.kdp-footer_branding[c-kdpGlobalFooter_kdpGlobalFooter] .dr-pepper[c-kdpGlobalFooter_kdpGlobalFooter],
+.kdp-branding[c-kdpThemeHeader_kdpThemeHeader] .home[c-kdpThemeHeader_kdpThemeHeader]{
+    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/dr-pepper.svg) !important;
+}
+
+ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="instagram"][c-kdpNavMenu_kdpNavMenu] {
+    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-instagram.svg) !important;
+}
+ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="facebook"][c-kdpNavMenu_kdpNavMenu] {
+    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-facebook.svg) !important;
+}
+ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="twitter"][c-kdpNavMenu_kdpNavMenu] {
+    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-twitter.svg) !important;
+}
+ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="youtube"][c-kdpNavMenu_kdpNavMenu] {
+    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-youtube.svg) !important;
+}
+.social-buttons.facebook::before{
+    content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-facebook-auth.svg) !important;
+}
+.social-buttons.google::before{
+    content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-google-auth.svg) !important;
+}
+.social-buttons.apple::before{
+    content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/ICON-APPLE.svg) !important;
+}
+/*.signup-form_container li{
+    width:49% !important;
+}
+
+.signup-form_container .slds-tabs_default__overflow-button{
+    display:none !important;
+}*/
+
+video{
+    background-color:rgb(144, 13, 44);
+}
+
+
+@media (max-width:768px){
+    c-kdp-hero-base .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase]{
+        min-height:780px;
+    }
+    .comm-page-home #kdp-hero .forceCommunityThemeHeroBase[style] {
+        padding-bottom: 4rem !important;
+        padding-top: 5rem !important;
+    }
+    .comm-page-home #kdp-hero .bgImage {
+        background-image: url('/sfsites/c/file-asset/HERO_IMAGE2x') !important;
+    }
+
+
+    .comm-page-custom-rewards-jump #kdp-hero .bgImage {
+        background-image: url('/sfsites/c/file-asset/HEROMOBILE2x') !important;
+    }
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+.detailsData:empty:before{
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-top: 4px solid #900D2C;
+    border-right: 2px solid transparent;
+    animation: spinner .6s linear infinite;
+}
+
+.comm-page-custom-unbsubscribe .kdp-button.button-ghost.ghost-primary{
+    border-color: white !important;
+}
+
+.slds-form-element__control[c-kdpUserProfile_kdpUserProfile] > a[title="Change Password"][c-kdpUserProfile_kdpUserProfile]{
+    font-size: 0.8rem !important;
+}
+
+.button-wrapper[c-kdpUserProfile_kdpUserProfile]{
+    margin-top:40px;
+}
+
+.packContent_content{
+    padding-bottom:120px !important;
+}
+
+
+
+.comm-page-custom-pack-onboarding .forceCommunityFlowCommunity{
+    border:none;
+}
+
+.comm-page-custom-pack-onboarding lightning-formatted-rich-text.flowruntime-inline span {
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    min-height: 750px !important;
+}
+
+/* Custom styles for Berries and Cream */
+.contentBlockSection[style*="drpepper.com/cms/delivery/media/MCYI6DOIJ25ZEHJNG7KVOKLGRVM4"] h2 {
+    max-width: 500px
+}
+
+body.comm-page-custom-berries-and-cream .kdp-hero-bg {
+    background: url(https://www.drpepper.com/cms/delivery/media/MCYI6DOIJ25ZEHJNG7KVOKLGRVM4), rgb(220, 30, 165) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+body.comm-page-custom-berries-and-cream .btn-join {
+    transition: 0.2s all ease-in-out;
+}
+
+body.comm-page-custom-berries-and-cream .btn-join:hover {
+    filter: saturate(70%);
+}
+
+@media (max-width: 768px) {
+    body.comm-page-custom-berries-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+        height: 25vh !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body.comm-page-custom-cherry-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+        height: 25vh !important;
+    }
+}
