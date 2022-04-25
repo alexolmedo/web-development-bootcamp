@@ -1,0 +1,323 @@
+<link rel="stylesheet" href="https://use.typekit.net/gwz6erc.css" />
+<link href="/s/sfsites/c/resource/KDP_Assets/styles/global.css?v=2212" rel="stylesheet" type="text/css" />
+
+<link rel="shortcut icon" href="https://www.drpepper.com/cms/delivery/media/MCAUDTAN7NHBEQDOLEKJAAF45DSA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@drpepper" />
+<meta property="og:site_name" content="Dr Pepper">
+<meta property="og:type" content="website">
+<!-- <meta property="og:title" content="Buy Dr Pepper. Earn Pepper Perks Points."> -->
+<!--<meta property="og:description" content="Sign up for Pepper Perks to get the rewards you deserve for drinking the Dr Pepper you also deserve."> -->
+<!-- <meta property="og:image" content="https://my.drpepper.com/cms/delivery/media/MCRMMORSFOPJGL5CLBMKPVGY3NPQ"> -->
+<!-- <meta name="twitter:image" content="https://my.drpepper.com/cms/delivery/media/MCRMMORSFOPJGL5CLBMKPVGY3NPQ"> -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+-->
+<script
+    src="https://browser.sentry-cdn.com/6.17.3/bundle.tracing.min.js"
+    integrity="sha384-wOI3ybvJAKu3cpP0kFQ6W1Y0RETbDe+vhlowRVTWX1yLIzmMVGuV1FKIWRZdYyPd"
+    crossorigin="anonymous"
+></script>
+<script>
+  Sentry.init({
+    dsn: "https://2fa0e970fff349538fa494e6001400a3@o932993.ingest.sentry.io/5882026",
+    environment: "PROD",
+    sampleRate: 0.6,
+    integrations: [new Sentry.Integrations.BrowserTracing()],
+    tracesSampleRate: 0.6,
+//      ignoreUrls: ["/utag/dpsg/drpepper-my-subdomain/prod/utag.js"],
+    beforeSend(event, hint) {
+      var error = hint.originalException;
+      if (
+        error &&
+        error.stack &&
+        error.stack.indexOf("/utag/dpsg/drpepper-my-subdomain/prod/utag.js") !== -1
+      ) {
+        return null;
+      }
+      return event;
+    },
+  });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//tags.tiqcdn.com/utag/dpsg/drpepper-my-subdomain/prod/utag.sync.js"></script>
+<!-- data layer -->
+<script type="text/javascript">
+  var utag_data = {
+    event_type : "",
+    event_action : "",
+    event_label : "",
+    page_name : "",
+    page_category : "",
+    page_type : "",
+    event_category : "",
+    property_id : "",
+    tracking_id : "",
+    event_name : "",
+    geo_state : ""
+  }
+</script>
+
+<!-- TEALIUM prod -->
+<script type="text/javascript">
+  if(document.domain.indexOf('salesforce-communities.com')==-1){
+    (function(a,b,c,d){
+      a='https://tags.tiqcdn.com/utag/dpsg/drpepper-my-subdomain/prod/utag.js';
+      b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+  }
+</script>
+
+<script>
+  document.addEventListener('kAnalytics', function(e) {
+    if(!window.utag){
+      return;
+    }
+    if( e.detail.action == "link_click" ){
+      utag.link({
+        "event_name"            :  "internal_navigation",              // e.detail.eventName
+        "cta_component"         :  e.detail.component,       // "c-kdp-hero-base"
+        "cta_classes"           :  e.detail.classList,       // "primary-cta"
+        "cta_label"             :  e.detail.text,            // "SIGN UP"
+        "cta_link"              :  e.detail.href             // "/s/login/selfRegister"
+      });
+    } else if ( e.detail.action == "login_success" || e.detail.action == "signup_complete" ){
+      utag.link({
+        event_name     : "login_signup",
+        customer_email : e.detail.email
+      });
+    } else if ( e.detail.action == "dp_social_account_linked"
+      || e.detail.action == "dp_social_account_revoked"
+      || e.detail.action == "dp_new_post" ){
+      utag.link({
+        event_name     : e.detail.action,
+        detail : e.detail
+      });
+    } else if (e.detail.action == "dp_user_profile_updated"){
+      utag.link({
+        event_name: "dp_user_profile_updated",
+        favorite_flavors: e.detail.fields.Favorite_Flavors__c
+      });
+    }
+  });
+</script>
+<script>
+  document.addEventListener('kbodytheme', function(e) {
+    console.log(e.detail.themeColor);
+    if (e.detail.themeColor == 'kdpDarkTheme') {
+      document.body.classList.remove('kdpLightTheme');
+    } else if (e.detail.themeColor == 'kdpLightTheme'){
+      document.body.classList.add('kdpLightTheme');
+    }
+    //document.body.classList.add(e.detail.themeColor);
+  });
+</script>
+<script>
+  // my. redirect
+  if (window.location.hostname == "my.drpepper.com") {
+    if (window.location.pathname == "/s/") {
+      window.location = "https://www.drpepper.com/s/rewards/" + window.location.search;
+    } else {
+      window.location =
+        "https://www.drpepper.com" +
+        window.location.pathname +
+        window.location.search;
+    }
+  } else if (window.location.pathname.indexOf("en/products") !== -1) {
+    window.location =
+      "https://products.drpepper.com/en/" +
+      window.location.search;
+  } else if (window.location.search.indexOf("en%2Fproducts") !== -1) {
+    try {
+      window.location =
+        "https://products.drpepper.com/en/" +
+        /\?gclid=(.+)/.exec(decodeURIComponent(window.location.search))[0];
+    } catch (e) { // catches a malformed URI
+      console.error(e);
+      window.location =
+        "https://products.drpepper.com/en/"
+    }
+  }
+</script>
+
+<style>
+    /* Tealium footer link */
+    footer li a{
+        color: inherit;
+        font-weight: var( --font-weight_strong );
+        text-decoration: none;
+    }
+    .tl_content {
+        margin: 0 auto; padding: 2rem 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .tl_content-heading {
+        position: absolute;
+        top: -120px;
+        width: 100%;
+    }
+
+    .tl_content-heading img,
+    .tl_content-section div > img {
+        width: 260px;
+    }
+
+    .tl_content-block {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tl_content-img {
+        margin-bottom: 1rem;
+        max-width: 312px;
+    }
+
+    .tl_content-content {
+        margin-bottom: 2rem;
+        max-width: 360px;
+    }
+
+    .tl_content-content h2 {
+        font: var(--font-weight_stronger) 1.375rem/1.375rem var(--font-header) !important;
+    }
+
+    .tl_content-prizes {
+        flex-direction: column;
+    }
+
+    .tl_content-prizes .slds-col {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .tl_content-prizes .slds-col:last-of-type {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        .tl_content {
+            padding: 4rem 0;
+            max-width: 784px;
+        }
+
+        .tl_content-heading {
+            top: -140px;
+        }
+
+        .tl_content-heading img,
+        .tl_content-section div > img {
+            width: auto;
+        }
+
+        .tl_content-block {
+            text-align: left;
+        }
+
+        .tl_content-block,
+        .tl_content-prizes {
+            flex-direction: row;
+        }
+
+        .tl_content-prizes .slds-col {
+            margin-bottom: 0;
+        }
+    }
+
+    /* Tuition Finalists Style Tweaks */
+
+    .video-responsive{
+        overflow:hidden;
+        padding-bottom:60%;
+        position:relative;
+        height:544px;
+        width:306px;
+    }
+
+    .video-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+    .champ-finalists-title {
+        font-size: 3.25rem !important;
+        line-height: 1 !important;
+        margin-top: 2.5rem;
+        text-align: center;
+        color: var(--color-maroon_dark);
+    }
+
+    .tl_content-content-finalists {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        max-width: 560px;
+    }
+    @media (min-width: 1024px) {
+        .tl_content-content-finalists {
+            margin-left: 55px;
+        }
+        @media (min-width: 1440px) {
+            .tl_content-content-finalists {
+                margin-left: 115px;
+            }
+
+</style>
+<script>
+  var grecaptchaReady = false;
+  var onloadCallback = function(){
+    grecaptchaReady = true;
+    if (window.location.pathname.includes("barrysdeservedarkberry")) {
+      setTimeout(function(){
+        grecaptcha.render(document.querySelector('.g-recaptcha'));
+      },1500);
+    }
+  };
+  var verifyCallback = function(token) {
+    document.dispatchEvent(new CustomEvent('grecaptchaVerified', {'detail': {response: token}}));
+  };
+  var errorCallback = function() {
+    document.dispatchEvent(new Event('grecaptchaError'));
+  };
+  document.addEventListener('grecaptchaRender', function(e) {
+    onloadCallback = function() {
+      grecaptchaReady = true;
+      grecaptcha.render(e.detail.element, {
+        'sitekey': '6LesKKAeAAAAAKUGgjWLWkKR9JxeRckakEj2gqMj',
+        'callback': verifyCallback,
+        'error-callback': errorCallback,
+        'size': 'invisible',
+        'badge': e.detail.hasOwnProperty('badge') ? e.detail.badge : 'bottomright'
+      });
+    };
+    if (grecaptchaReady) {
+      onloadCallback();
+    }
+  });
+  document.addEventListener('grecaptchaReset', function() {
+    grecaptcha.reset();
+  });
+  document.addEventListener('grecaptchaExecute', function() {
+    console.log('grecaptcha running');
+    grecaptcha.execute();
+  });
+</script>
+
+<script>
+  // Dark Berry recaptcha
+  if (window.location.pathname.includes("barrysdeservedarkberry")) {
+    setInterval(function(){
+      var response = document.getElementById("g-recaptcha-response");
+      if (response == null || response.value.trim() == "") {
+        var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+        elems["ts"] = JSON.stringify(new Date().getTime());
+        document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+      }
+    }, 500);
+  }
+</script>
+
+<script src='https://www.google.com/recaptcha/api.js?render=explicit&onload=onloadCallback' async></script>
