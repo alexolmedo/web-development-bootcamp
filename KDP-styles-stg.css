@@ -163,7 +163,7 @@ body.comm-page-custom-barrysdeservedarkberry form select {
     min-height: 3rem;
 }
 
-/*************************************** Custom styles for Jurassic World Homepage ******************************************/
+/************************************** Custom styles for Jurassic World Homepage *************************************/
 body.comm-page-home .kdp-hero-bg {
     background: url(https://stg-my.drpepper.com/cms/delivery/media/MCM77KT34NDNBS7JZ2ATEU7H36W4), #2b338c !important;
     background-repeat: no-repeat !important;
@@ -175,25 +175,7 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
     color: #2b338c !important;
 }
 
-@media (min-width: 1024px) {
-    body.comm-page-home .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
-        height: auto !important;
-        width: 432px !important;
-        margin-right: -100px;
-        padding-left: 100px;
-    }
-}
-
-@media (min-width: 768px) {
-    body.comm-page-home .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
-        height: auto !important;
-        width: 50% !important;
-        margin-right: -50px;
-        padding-left: 50px;
-    }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     body.comm-page-home .kdp-hero-bg {
         background: url(https://stg-my.drpepper.com/cms/delivery/media/MCPYL4GPGBQZENPP636O5C5TLKYY), #2b338c !important;
         background-repeat: no-repeat !important;
