@@ -163,8 +163,9 @@ body.comm-page-custom-barrysdeservedarkberry form select {
     min-height: 3rem;
 }
 
+
 /************************************** Custom styles for Jurassic World Homepage *************************************/
-body.comm-page-home .kdp-hero-bg {
+/*body.comm-page-home .kdp-hero-bg {
     background: url(https://stg-my.drpepper.com/cms/delivery/media/MCM77KT34NDNBS7JZ2ATEU7H36W4), #2b338c !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -181,6 +182,52 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
         background-repeat: no-repeat !important;
         background-size: cover !important;
         background-position: top right !important;
+    }
+
+    body.comm-page-home .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+        height: auto !important;
+        width: 100% !important;
+    }
+}*/
+
+/************************************** Custom styles for Football Campaign Homepage & Rewards *************************************/
+body.comm-page-home .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MCXO5IG4YWXFB3VC6CRV2QIV3WVI), #a51d31 !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top left !important;
+}
+
+body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kdpherobase_kdpherobase] {
+    color: #900d2c !important;
+}
+
+@media (max-width: 579px) {
+    body.comm-page-home .kdp-hero-bg {
+        background-size: contain !important;
+        background: url(https://stg-my.drpepper.com/cms/delivery/media/MCUZU7MG2I3VGORMKWDM3Y4LIAFY), #a51d31 !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-position: top center !important;
+    }
+
+    body.comm-page-custom-rewards .contentBranding_column[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase] {
+        height: auto !important;
+        width: 100% !important;
+        visibility: hidden;
+    }
+
+    body.comm-page-custom-rewards .kdp-hero-bg {
+        background-size: contain !important;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 768px) {
+    body.comm-page-home .kdp-hero-bg {
+        background: url(https://stg-my.drpepper.com/cms/delivery/media/MCUZU7MG2I3VGORMKWDM3Y4LIAFY), #a51d31 !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: top center !important;
     }
 
     body.comm-page-home .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
@@ -230,3 +277,187 @@ body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpherobase_
         width: 70% !important;
     }
 }
+
+.comm-page-custom-test-page video.video-wrapper[c-kdpHeroBase_kdpHeroBase] {
+    max-height: 46.66vw;
+    position: initial !important;
+    transform: none !important;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse video.video-wrapper[c-kdpHeroBase_kdpHeroBase] {
+    max-height: 56.26vw;
+    position: initial !important;
+    transform: none !important;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse .container p.regular-text {
+    padding-top: 20px;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse .container h2 {
+    padding-top: 4rem;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    display: none;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(https://stg-www.drpepper.com/cms/delivery/media/MCR42AKGJUWZGEDAQNDNBZQJSYZM);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem) 50%;
+}
+
+@media (max-width: 767px) {
+    .comm-page-custom-fansville-foam-finger-warehouse form#foam-finger-form {
+        width: 100% !important;
+    }
+
+    .comm-page-custom-fansville-foam-finger-warehouse form#foam-finger-form .submit-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse .video-wrapper {
+    background: url(https://stg-www.drpepper.com/cms/delivery/media/MCXYE5HTIWVNHONGVZIYNQ6PCI7E) no-repeat cover;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse #body-content {
+    background: url(https://stg-www.drpepper.com/cms/delivery/media/MC3JFLHH7PA5AXNJ2ULKP3N5BDWA), rgb(144, 13, 44);
+    background-size: contain;
+}
+
+@media (max-width: 1023px) {
+    .comm-page-custom-fansville-foam-finger-warehouse .video-wrapper {
+        display: none;
+    }
+}
+
+.comm-page-custom-okay .contentBranding_column {
+    display: block !important;
+}
+
+@media (max-width: 767px) {
+    .comm-page-custom-okay .content[c-kdpHeroBase_kdpHeroBase] .contentBranding_column p.intro-text[c-kdpHeroBase_kdpHeroBase] {
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+    }
+
+    .comm-page-custom-okay .contentBranding_column small {
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+    }
+
+    .comm-page-home .kdp-button-group[c-kdpHeroBase_kdpHeroBase] {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comm-page-home .kdp-button-group[c-kdpHeroBase_kdpHeroBase] .secondary-cta {
+        margin: 20px 0 0 2.5rem;
+    }
+
+    .comm-page-home .kdp-button-group[c-kdpHeroBase_kdpHeroBase] .kdp-button.primary-cta[c-kdpHeroBase_kdpHeroBase] {
+        max-width: unset;
+    }
+
+    .comm-page-custom-tuition .legal-copy {
+        font-size: 12px !important;
+        line-height: 18px !important;
+    }
+
+    #tuition-form-wrapper form {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .comm-page-custom-okay .contentBranding_column small {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .comm-page-custom-bad .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase], .comm-page-custom-okay .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+        height: calc(100vh - 8rem);
+    }
+
+    #tuition-form-wrapper form {
+        width: 45%;
+    }
+
+    .comm-page-custom-tuition .legal-copy {
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+
+    .comm-page-custom-tuition-completed .regular-text {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .comm-page-custom-tuition-completed .contentBranding_column {
+        display: block !important;
+        flex-direction: column;
+    }
+
+    .comm-page-custom-tuition-completed form {
+        width: 45%;
+    }
+}
+
+.comm-page-custom-tuition-form .container {
+    display: none;
+}
+
+.comm-page-custom-okay .container {
+    display: none;
+}
+
+.comm-page-custom-bad .contentBranding_column {
+    display: block !important;
+}
+
+.comm-page-custom-bad .contentBranding_column h1 {
+    text-transform: none;
+}
+
+.comm-page-custom-bad .contentBranding_column .regular-text {
+    padding-top: 20px;
+}
+
+.comm-page-custom-okay .kdp-button-group {
+    display: none;
+}
+
+.comm-page-custom-bad .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase], .comm-page-custom-okay .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    min-height: fit-content;
+}
+
+.comm-page-custom-bad .container {
+    display: none;
+}
+
+.comm-page-custom-tuition-completed .container {
+    display: none;
+}
+
+
+/**** HAIL MARY STYLING BEGINS ****/
+.comm-page-custom-completed .contentBranding_column, .comm-page-custom-hail-mary-contest-over .contentBranding_column {
+    display: block !important;
+}
+
+.comm-page-custom-hailmary .container, .comm-page-custom-completed .container, .comm-page-custom-hail-mary-contest-over .container {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+}
+
+/**** HAIL MARY STYLING ENDS ****/
