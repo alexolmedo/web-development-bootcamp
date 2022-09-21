@@ -294,7 +294,7 @@
         <div
             style="display: grid; grid-template-columns: 60px 1fr; grid-gap: 0 30px; align-items: center; padding-top: 3rem;">
           <img src="https://stg-www.drpepper.com/cms/delivery/media/MCUXE5NBRWERHCXESG4NNBGP3YQE"/>
-          <div style="display: flex; flex-direction: column;">
+          <div style="display: flex; flex-direction: column; padding-left: 20px;">
             <p class="regular-text"><b>SUBMIT YOUR IDEA</b></p>
             <p class="regular-text">Enter between 9/19/22-10/10/22 in the form below and tell us about your breakthrough
               business or product</p>
@@ -344,221 +344,101 @@
       <p class="regular-text">Your business or product should be born out of passion and something our panelists will
         feel investing in will jumpstart your venture. Apply below to enter the ‘Hail Mary for $23K Contest.’</p>
 
-      <form
-          id="foam-finger-form"
-          action="https://pepperpack--stage.my.salesforce.com/servlet/servlet.WebToCaseNONE?encoding=UTF-8"
-          method="post"
-          class="slds-var-m-top_large"
-          style="text-align: left; display: flex; flex-direction: column; margin-left: auto; margin-right: auto; color: #5A5657; padding-top: 3rem; align-items: center; width:50%;"
-      >
-        <input
-            type="hidden"
-            name="captcha_settings"
-            value='{"keyname":"Test","fallback":"true","orgId":"00D530000008fvL","ts":""}'
-        />
+      <div class="slds-grid slds-gutters slds-wrap slds-align_absolute-center">
+        <div class="slds-col slds-size_12-of-12 slds-large-size_5-of-12 hiw-col">
+          <div class="slds-align_absolute-center slds-var-m-bottom_large">
+            <form action="https://pepperpack--stage.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8"
+                  method="POST">
 
-        <input type="hidden" name="orgid" value="00D530000008fvL"/>
-        <input type="hidden" name="retURL" value="https://stg-www.drpepper.com/s/tuition-completed"/>
-        <input type="hidden" name="origin" value="Web"/>
-        <input type="hidden" name="subject" value="Foam Finger Giveaway"/>
+              <input type=hidden name='captcha_settings'
+                     value='{"keyname":"Test","fallback":"true","orgId":"00D530000008fvL","ts":""}'>
+              <input type=hidden name="orgid" value="00D530000008fvL">
+              <input type=hidden name="retURL" value="http://">
+              <input type="hidden" name="origin" value="Web"/>
+              <input type="hidden" name="subject" value="Hail Mary"/>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="00N53000000qufQ">First Name</label>
-        <input
-            id="00N53000000qufQ"
-            maxlength="200"
-            name="00N53000000qufQ"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              <!--  ----------------------------------------------------------------------  -->
+              <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+              <!--  these lines if you wish to test in debug mode.                          -->
+              <!--  <input type="hidden" name="debug" value=1>                              -->
+              <!--  <input type="hidden" name="debugEmail"                                  -->
+              <!--  value=“kelley.wang@publicissapient.com”>                                -->
+              <!--  ----------------------------------------------------------------------  -->
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="00N53000000qufR">Last Name</label>
-        <input
-            id="00N53000000qufR"
-            maxlength="255"
-            name="00N53000000qufR"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              First Name
+              <input id="00N53000000MVXG" maxlength="50" name="00N53000000MVXG" size="20" type="text"/><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="00N53000000qufP">Email</label>
-        <input
-            id="00N53000000qufP"
-            maxlength="255"
-            name="00N53000000qufP"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            data-form-type="address,part"
-            required
-        />
-        <br/>
+              Last Name
+              <input id="00N53000000MVXH" maxlength="50" name="00N53000000MVXH" size="20" type="text"/><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="00N53000000MVXG">Phone Number</label>
-        <input
-            id="00N53000000MVXG"
-            maxlength="50"
-            name="00N53000000MVXG"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            data-form-type="address,part"
-            required
-        /><br/>
+              <label for="email">Email</label>
+              <input id="email" maxlength="80" name="email" size="20" type="text"/><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="00N53000000MVXH">Date of Birth
-          (MM/DD/YYYY)</label>
-        <input
-            id="00N53000000MVXH"
-            maxlength="50"
-            name="00N53000000MVXH"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            data-form-type="address,part"
-            required
-        /><br/>
+              <label for="phone">Phone Number</label>
+              <input id="phone" maxlength="40" name="phone" size="20" type="text"/><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="00N53000000qufO">DATE OF BIRTH -
-          MM/DD/YYYY</label>
-        <input
-            id="00N53000000qufO"
-            maxlength="50"
-            name="00N53000000qufO"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            data-form-type="address,part"
-            required
-        /><br/>
+              Date of Birth (MM/DD/YYYY)<span class="dateInput dateOnlyInput">
+              <input id="00N53000000qufO" name="00N53000000qufO" size="12" type="text"/></span><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">TikTok or Instagram Handle (note N/A
-          if not applicable)</label>
-        <input
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              TikTok or Instagram Handle (note N/A if not applicable)
+              <input id="00N53000000MVXJ" maxlength="50" name="00N53000000MVXJ" size="20" type="text"/><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">What is your business or product
-          name?</label>
-        <input
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              What is your business or product name?
+              <input id="00N53000001XDD9" maxlength="255" name="00N53000001XDD9" size="20" type="text"/><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">Please share either your website url,
-          presentation or photo or video link that would help illustrate your idea via link (ie Dropbox, Google Drive,
-          WeTransfer). All Links must be Publicly Accessible.</label>
-        <input
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            placeholder="http://"
-            required
-        /><br/>
+              Please share either your website url, presentation or photo or video link that would help illustrate your
+              idea via link (ie Dropbox, Google Drive, WeTransfer). All Links must be Publicly Accessible.
+              <input id="00N53000001XDDE" maxlength="255" name="00N53000001XDDE" size="20" type="text"/><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">What category describes your business
-          or product? (check all that apply)</label>
-        <input
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              What category describes your business or product? (check all that apply)
+              <select id="00N53000001XDD7" multiple="multiple" name="00N53000001XDD7" title="Business Category">
+                <option value="Technology">Technology</option>
+                <option value="App / Website">App / Website</option>
+                <option value="Housewares / Home Design">Housewares / Home Design</option>
+                <option value="Health / Wellness / Nutrition">Health / Wellness / Nutrition</option>
+                <option value="Fitness">Fitness</option>
+                <option value="Sports">Sports</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Clothing / Fashion">Clothing / Fashion</option>
+                <option value="Toys / Games">Toys / Games</option>
+                <option value="Entertainment / Experiential">Entertainment / Experiential</option>
+                <option value="Children">Children</option>
+                <option value="Pets">Pets</option>
+                <option value="Music">Music</option>
+                <option value="Holiday">Holiday</option>
+              </select><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">What category describes the current
-          phase of your business or product? (check one)</label>
-        <input
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              What category describes the current phase of your business or product? (check one)
+              <select id="00N53000001XDD8" multiple="multiple" name="00N53000001XDD8" title="Business Phase">
+                <option value="Idea">Idea</option>
+                <option value="Research &amp; Development">Research &amp; Development</option>
+                <option value="Prototype/Beta Testing">Prototype/Beta Testing</option>
+                <option value="Crowdfunding">Crowdfunding</option>
+                <option value="Operating/Shipping">Operating/Shipping</option>
+              </select><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">Provide your
-          business/invention/innovation elevator pitch in 15 words or less</label>
-        <textarea
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              Provide your business/invention/innovation elevator pitch in 15 words or less
+              <textarea id="00N53000001XDDA" name="00N53000001XDDA" rows="3" type="text"></textarea><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">Elaborate on your business/invention
-          idea (500 words or less)</label>
-        <textarea
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              Elaborate on your business/invention idea (500 words or less)
+              <textarea id="00N53000001XDDB" name="00N53000001XDDB" rows="3" type="text"></textarea><br>
 
+              How did you come up with this idea? Why is it important to you? (500 words or less)
+              <textarea id="00N53000001XDDC" name="00N53000001XDDC" rows="3" type="text"></textarea><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">How did you come up with this idea?
-          Why is it important to you? (500 words or less)</label>
-        <textarea
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              If selected, how would the tuition and seed money help you achieve your business goals?
+              <textarea id="00N53000001XDDD" name="00N53000001XDDD" rows="3" type="text"></textarea><br>
 
-        <label style="padding-left: 10px; color: white; width: 100%;" for="phone">If selected, how would the tuition and
-          seed money help you achieve your business goals?</label>
-        <textarea
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            style="padding: 20px 17px; width: 100%;"
-            required
-        /><br/>
+              <input type="hidden" id="external" name="external" value="1"/><br>
 
-        <input type="hidden" id="external" name="external" value="1"/><br/>
+              <div class="g-recaptcha" data-sitekey="6LdG5YgeAAAAAGpS591yOgVACMuVUI6rPX_rlmEJ"></div>
+              <br>
+              <input type="submit" name="submit">
 
-        <div
-            class="g-recaptcha"
-            data-sitekey="6LdG5YgeAAAAAGpS591yOgVACMuVUI6rPX_rlmEJ"
-        ></div>
-        <label style="color: white; width: 75%; display: flex;"><input type="checkbox" style="margin-right: 10px;"
-                                                                       required/><label>I agree to the <a
-            href="/s/terms?tabset-d0c3e=7dce8" target="_blank" style="color: white; text-decoration: underline;">Official
-          Rules</a> for the ‘Hail Mary for $23K Contest’ and Privacy Policy </label></label>
-        <br/>
-        <input class="submit-button kdp-button button-secondary primary-cta slds-truncate" type="submit" name="submit"
-               style="width: fit-content; padding: 0.7rem 2rem; font-size: 18.9px;"/>
-      </form>
+            </form>
+          </div>
+        </div>
+      </div>
 
       <small class="slds-var-m-top_large"> <b>NO PURCHASE OR PAYMENT NECESSARY.</b> A PURCHASE WILL NOT INCREASE YOUR
         CHANCES OF WINNING. OPEN TO LEGAL RESIDENTS OF THE 50 UNITED STATES/DC WHO ARE 18-24 YEARS OF AGE. VOID WHERE

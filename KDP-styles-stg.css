@@ -456,8 +456,34 @@ body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpherobase_
     display: none;
 }
 
-@media (max-width: 767px) {
+body.comm-page-custom-hailmary .kdp-hero-bg {
+    background-position: center center !important;
+}
 
+body.comm-page-custom-hailmary form {
+    width: 100%;
+}
+
+body.comm-page-custom-hailmary form input:not(.kdp-button),
+body.comm-page-custom-hailmary form textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    min-height: 3rem;
+    color: #010000;
+}
+
+body.comm-page-custom-hailmary form select {
+    width: 100%;
+    display: block;
+    color: #010000;
+}
+
+@media (max-width: 767px) {
+    .comm-page-custom-hailmary .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+        height: 120vw;
+        min-height: auto;
+    }
 }
 
 /**** HAIL MARY STYLING ENDS ****/
