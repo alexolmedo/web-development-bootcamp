@@ -464,6 +464,24 @@ body.comm-page-custom-hailmary .wrapper.slds-var-p-bottom_large {
     max-width: 1200px;
 }
 
+@media (max-width: 767px) {
+    body.comm-page-custom-hailmary .image-text {
+        display: flex !important;
+        align-items: start !important;
+        flex-direction: column !important;
+    }
+
+    body.comm-page-custom-hailmary .image-text img {
+        width: 90px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    body.comm-page-custom-hailmary .image-text>div {
+        padding-left: 0 !important;
+    }
+}
+
 body.comm-page-custom-hailmary form {
     width: 100%;
 }
