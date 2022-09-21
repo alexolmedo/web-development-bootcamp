@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://use.typekit.net/gwz6erc.css"/>
 <link rel="stylesheet" href="https://use.typekit.net/gap7fnh.css"/>
-<link href="/s/sfsites/c/resource/KDP_Assets/styles/global.css?220304" rel="stylesheet" type="text/css"/>
+<!--<link href="/s/sfsites/c/resource/KDP_Assets/styles/global.css?v=2234" rel="stylesheet" type="text/css"/>-->
 
 <link rel="shortcut icon" href="/sfsites/c/resource/DRP_FavIcon"/>
 
@@ -15,6 +15,7 @@
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
 <script src="//tags.tiqcdn.com/utag/dpsg/drpepper-my-subdomain/qa/utag.sync.js"></script>
 <!-- data layer -->
 <script type="text/javascript">
@@ -35,6 +36,9 @@
     geo_state: ''
   }
 </script>
+
+<!-- BazaarVoice v2 -->
+<script src="https://apps.bazaarvoice.com/deployments/drpepper/main_site/staging/en_US/bv.js"></script>
 
 <!-- stage / dev -->
 <script type="text/javascript">
@@ -69,8 +73,8 @@
         customer_email: e.detail.email
       })
     } else if (e.detail.action == 'dp_social_account_linked'
-      || e.detail.action == 'dp_social_account_revoked'
-      || e.detail.action == 'dp_new_post') {
+        || e.detail.action == 'dp_social_account_revoked'
+        || e.detail.action == 'dp_new_post') {
       utag.link({
         event_name: e.detail.action,
         detail: e.detail
@@ -95,129 +99,207 @@
   })
 </script>
 <style>
+  body.comm-page-home div[c-kdpherobase_kdpherobase] a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kdpherobase_kdpherobase] {
+    color: var(--color-maroon) !important;
+  }
+
+  .tl_content {
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .tl_content-heading {
+    position: absolute;
+    top: -120px;
+    width: 100%;
+  }
+
+  .comm-page-custom-tuition .tl_content-heading {
+    top: -83px;
+  }
+
+  .comm-page-custom-tuition .kdp-hero img {
+    max-height: 300px;
+  }
+
+  .comm-page-custom-tuition .kdp-hero .content {
+    padding-top: 120px;
+  }
+
+  .comm-page-custom-tuition .content[c-kdpHeroComponent_kdpHeroComponent] p.intro-text[c-kdpHeroComponent_kdpHeroComponent] {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .text-align_center-mobile {
+    text-align: center;
+  }
+
+  .tl_content-heading img,
+  .tl_content-section div > img {
+    width: 260px;
+  }
+
+  .tl_content-block {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tl_content-img {
+    margin-bottom: 1rem;
+    max-width: 312px;
+  }
+
+  .tl_content-content {
+    margin-bottom: 2rem;
+    max-width: 360px;
+  }
+
+  .tl_content-content h2 {
+    font: var(--font-weight_stronger) 1.375rem/1.375rem var(--font-header) !important;
+  }
+
+  .tl_content-prizes {
+    flex-direction: column;
+  }
+
+  .tl_content-prizes .slds-col {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .tl_content-prizes .slds-col:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
     .tl_content {
-        margin: 0 auto;
-        padding: 2rem 0;
-        position: relative;
-        width: 100%;
+      padding: 4rem 0;
+      max-width: 784px;
     }
 
     .tl_content-heading {
-        position: absolute;
-        top: -120px;
-        width: 100%;
+      top: -140px;
+    }
+
+    .comm-page-custom-tuition .tl_content-heading {
+      top: -92px;
+    }
+
+    .comm-page-custom-tuition .kdp-hero .content {
+      padding-top: 200px;
+    }
+
+    .comm-page-custom-tuition .kdp-hero img {
+      max-height: unset;
+    }
+
+    .comm-page-custom-tuition .content[c-kdpHeroComponent_kdpHeroComponent] p.intro-text[c-kdpHeroComponent_kdpHeroComponent] {
+      font-size: 1.375rem !important;
+      line-height: 2.0625rem !important;
+    }
+
+    .text-align_center-mobile {
+      text-align: inherit;
     }
 
     .tl_content-heading img,
     .tl_content-section div > img {
-        width: 260px;
+      width: auto;
     }
 
     .tl_content-block {
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
+      text-align: left;
     }
 
-    .tl_content-img {
-        margin-bottom: 1rem;
-        max-width: 312px;
-    }
-
-    .tl_content-content {
-        margin-bottom: 2rem;
-        max-width: 360px;
-    }
-
-    .tl_content-content h2 {
-        font: var(--font-weight_stronger) 1.375rem/1.375rem var(--font-header) !important;
-    }
-
+    .tl_content-block,
     .tl_content-prizes {
-        flex-direction: column;
+      flex-direction: row;
     }
 
     .tl_content-prizes .slds-col {
-        flex-direction: column;
-        margin-bottom: 3rem;
+      margin-bottom: 0;
     }
+  }
 
-    .tl_content-prizes .slds-col:last-of-type {
-        margin-bottom: 0;
-    }
+  /* Tuition Finalists Style Tweaks */
 
-    @media (min-width: 768px) {
-        .tl_content {
-            padding: 4rem 0;
-            max-width: 784px;
-        }
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    height: 544px;
+    width: 306px;
+  }
 
-        .tl_content-heading {
-            top: -140px;
-        }
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 
-        .tl_content-heading img,
-        .tl_content-section div > img {
-            width: auto;
-        }
+  .champ-finalists-title {
+    font-size: 3.25rem !important;
+    line-height: 1 !important;
+    margin-top: 2.5rem;
+    text-align: center;
+    color: var(--color-maroon_dark);
+  }
 
-        .tl_content-block {
-            text-align: left;
-        }
+  .tl_content-content-finalists {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 560px;
+  }
 
-        .tl_content-block,
-        .tl_content-prizes {
-            flex-direction: row;
-        }
-
-        .tl_content-prizes .slds-col {
-            margin-bottom: 0;
-        }
-    }
-
-    /* Tuition Finalists Style Tweaks */
-
-    .video-responsive {
-        overflow: hidden;
-        padding-bottom: 60%;
-        position: relative;
-        height: 544px;
-        width: 306px;
-    }
-
-    .video-responsive iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-
-    .champ-finalists-title {
-        font-size: 3.25rem !important;
-        line-height: 1 !important;
-        margin-top: 2.5rem;
-        text-align: center;
-        color: var(--color-maroon_dark);
-    }
-
+  @media (min-width: 1024px) {
     .tl_content-content-finalists {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        max-width: 560px;
+      margin-left: 55px;
     }
 
-    @media (min-width: 1024px) {
-        .tl_content-content-finalists {
-            margin-left: 55px;
-        }
-
-        @media (min-width: 1440px) {
-            .tl_content-content-finalists {
-                margin-left: 115px;
-            }
-        }
+    @media (min-width: 1440px) {
+      .tl_content-content-finalists {
+        margin-left: 115px;
+      }
     }
+  }
+
+  body.comm-page-custom-jurassicexclusive .kdp-hero, body.comm-page-custom-jurassicexclusive .kdp-hero .container {
+    max-height: 85vh !important;
+    height: 85vh !important;
+  }
+
+  @media (min-width: 375px) and (min-height: 800px) {
+    body.comm-page-custom-jurassicexclusive .kdp-hero, body.comm-page-custom-jurassicexclusive .kdp-hero .container {
+      max-height: 70vh !important;
+      height: 70vh !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    body.comm-page-custom-jurassicexclusive .kdp-hero, body.comm-page-custom-jurassicexclusive .kdp-hero .container {
+      max-height: 60vh !important;
+      height: 60vh !important;
+      min-height: unset !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hidden-on-desktop {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .hidden-on-mobile {
+      display: none;
+    }
+  }
 </style>
 <!--<script src="https://www.google.com/recaptcha/api.js"></script> -->
 <script>
@@ -225,7 +307,7 @@
     var banner = document.createElement('div')
     banner.style = 'z-index: 999999;background-color: yellow;padding: 2px;text-align: center;font-weight: bold;position: absolute;left: 0px;right: 0px;top: 0px;font-size: 12px;'
     banner.innerHTML = 'PREVIEW ENVIRONMENT: STAGE'
-    document.body.appendChild(banner)
+    // document.body.appendChild(banner)
   })
 </script>
 <script>
@@ -252,33 +334,103 @@
     }
   }
   var verifyCallback = function (token) {
-    document.dispatchEvent(new CustomEvent('grecaptchaVerified', { 'detail': { response: token } }))
+    document.dispatchEvent(new CustomEvent('grecaptchaVerified', {'detail': {response: token}}))
   }
   var errorCallback = function () {
     document.dispatchEvent(new Event('grecaptchaError'))
   }
   document.addEventListener('grecaptchaRender', function (e) {
-    onloadCallback = function () {
-      grecaptchaReady = true
+    if (grecaptchaReady) {
+      if (e.detail.element.childNodes.length) {
+        console.log('recaptcha already rendered');
+        return;
+      }
       grecaptcha.render(e.detail.element, {
         'sitekey': '6Le02H4eAAAAAC3AaI302CDLWcHYOzqNBxqZTVtJ',
         'callback': verifyCallback,
         'error-callback': errorCallback,
         'size': 'invisible',
         'badge': e.detail.hasOwnProperty('badge') ? e.detail.badge : 'bottomright'
-      })
+      });
 
-    }
-    if (grecaptchaReady) {
-      onloadCallback()
+    } else {
+      console.error('recaptcha not ready');
     }
   })
   document.addEventListener('grecaptchaReset', function () {
-    grecaptcha.reset()
+    if (grecaptchaReady) {
+      grecaptcha.reset()
+    }
   })
   document.addEventListener('grecaptchaExecute', function () {
-    console.log('grecaptcha running')
-    grecaptcha.execute()
+    if (grecaptchaReady) {
+      console.log('grecaptcha running')
+      grecaptcha.execute()
+    } else {
+      alert('Error submitting. Please refresh & try again.');
+    }
   })
 </script>
 <script src='https://www.google.com/recaptcha/api.js?render=explicit&onload=onloadCallback' async defer></script>
+<!--<script src="https://www.google.com/recaptcha/api.js"></script>-->
+<script>
+  function timestamp() {
+    var response = document.getElementById("g-recaptcha-response");
+    if (response == null || response.value.trim() == "") {
+      if (document.getElementsByName("captcha_settings")[0]) {
+        var elems = JSON.parse(
+            document.getElementsByName("captcha_settings")[0].value
+        );
+        elems["ts"] = JSON.stringify(new Date().getTime());
+        document.getElementsByName("captcha_settings")[0].value =
+            JSON.stringify(elems);
+      }
+    }
+  }
+
+  if (window.location.href.indexOf('foam-finger') > 0) {
+
+    setInterval(timestamp, 500);
+  }
+</script>
+
+<script>
+  if (window.location.href.indexOf('foam-finger') > 0) {
+    $("video.video-wrapper").addClass("hidden-on-mobile");
+  }
+</script>
+
+<!--<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(()=> {
+            if(window.location.href.indexOf('foam-finger') === -1){
+                return;
+            }
+            const foamForm = $('#foam-finger-form');
+            foamForm.submit(function() {
+                try {
+                    fetch("https://pepperpack--stage.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8", {
+                      "headers": {
+                        "accept": "text/html",
+                        "access-control-allow-headers": "application/json",
+                        "access-control-allow-origin": "*",
+                        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+                        "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+                        "sec-ch-ua-mobile": "?0",
+                        "sec-ch-ua-platform": "\"macOS\""
+                      },
+                      "referrer": "https://stg-www.drpepper.com/",
+                      "referrerPolicy": "origin-when-cross-origin",
+                      "body": $("#foam-finger-form").serialize(),
+                      "method": "POST",
+                      "mode": "no-cors",
+                      "credentials": "omit"
+                    }).then(response => response.text()).then(() => window.location.replace('/s/fansville-foam-finger-warehouse/completed'));
+                } catch {
+                    window.location.replace('/s/fansville-foam-finger-warehouse/completed');
+                }
+                return false;
+            });
+        }, 1000);
+	});
+</script>-->
