@@ -460,23 +460,35 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
     background-position: center center !important;
 }
 
+body.comm-page-custom-hailmary .wrapper.slds-var-p-bottom_large {
+    max-width: 1200px;
+}
+
 body.comm-page-custom-hailmary form {
     width: 100%;
 }
 
-body.comm-page-custom-hailmary form input:not(.kdp-button),
-body.comm-page-custom-hailmary form textarea {
+body.comm-page-custom-hailmary form input[type='text'],
+body.comm-page-custom-hailmary form textarea[type='text'] {
     width: 100%;
     display: block;
-    margin-bottom: 1rem;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
     min-height: 3rem;
     color: #010000;
+    padding: 0 10px;
 }
 
 body.comm-page-custom-hailmary form select {
     width: 100%;
     display: block;
     color: #010000;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+body.comm-page-custom-hailmary form select option {
+    padding: 10px;
 }
 
 @media (max-width: 767px) {
