@@ -501,6 +501,7 @@ body.comm-page-custom-hailmary form textarea[type='text'] {
 
 body.comm-page-custom-hailmary form select {
   width: 100%;
+  min-height: 50px;
   display: block;
   color: #010000;
   margin-top: 0.2em;
