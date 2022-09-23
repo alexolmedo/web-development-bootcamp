@@ -465,6 +465,18 @@ body.comm-page-custom-hailmary .wrapper.slds-var-p-bottom_large {
     max-width: 1200px;
 }
 
+body.comm-page-custom-hailmary p {
+    font-size: 16px !important;
+}
+
+body.comm-page-custom-hailmary p b {
+    font-size: 18px !important;
+}
+
+body.comm-page-custom-hailmary .disclaimer {
+    font-size: 12px !important;
+}
+
 @media (max-width: 767px) {
     body.comm-page-custom-hailmary .image-text {
         display: flex !important;
@@ -490,10 +502,10 @@ body.comm-page-custom-hailmary form {
 body.comm-page-custom-hailmary form input[type='text'],
 body.comm-page-custom-hailmary form textarea[type='text'] {
     width: 100%;
+    min-height: 50px;
     display: block;
     margin-top: 0.2em;
     margin-bottom: 1em;
-    min-height: 3rem;
     color: #010000;
     padding: 0 10px;
 }
