@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://use.typekit.net/gwz6erc.css"/>
-<link href="/s/sfsites/c/resource/KDP_Assets/styles/global.css?v=2212" rel="stylesheet" type="text/css"/>
+<link href="/s/sfsites/c/resource/KDP_Assets/styles/global.css?v=2232" rel="stylesheet" type="text/css"/>
 
 <link rel="shortcut icon" href="https://www.drpepper.com/cms/delivery/media/MCAUDTAN7NHBEQDOLEKJAAF45DSA"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -12,33 +12,8 @@
 <!-- <meta name="twitter:image" content="https://my.drpepper.com/cms/delivery/media/MCRMMORSFOPJGL5CLBMKPVGY3NPQ"> -->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 -->
-<script
-    src="https://browser.sentry-cdn.com/6.17.3/bundle.tracing.min.js"
-    integrity="sha384-wOI3ybvJAKu3cpP0kFQ6W1Y0RETbDe+vhlowRVTWX1yLIzmMVGuV1FKIWRZdYyPd"
-    crossorigin="anonymous"
-></script>
-<script>
-  Sentry.init({
-    dsn: 'https://2fa0e970fff349538fa494e6001400a3@o932993.ingest.sentry.io/5882026',
-    environment: 'PROD',
-    sampleRate: 0.6,
-    integrations: [new Sentry.Integrations.BrowserTracing()],
-    tracesSampleRate: 0.6,
-//      ignoreUrls: ["/utag/dpsg/drpepper-my-subdomain/prod/utag.js"],
-    beforeSend (event, hint) {
-      var error = hint.originalException
-      if (
-        error &&
-        error.stack &&
-        error.stack.indexOf('/utag/dpsg/drpepper-my-subdomain/prod/utag.js') !== -1
-      ) {
-        return null
-      }
-      return event
-    },
-  })
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
 <script src="//tags.tiqcdn.com/utag/dpsg/drpepper-my-subdomain/prod/utag.sync.js"></script>
 <!-- data layer -->
 <script type="text/javascript">
@@ -87,14 +62,19 @@
         'cta_label': e.detail.text,            // "SIGN UP"
         'cta_link': e.detail.href             // "/s/login/selfRegister"
       })
-    } else if (e.detail.action == 'login_success' || e.detail.action == 'signup_complete') {
+    } else if (e.detail.action == 'login_success') {
+      utag.link({
+        event_name: 'login_event',
+        customer_email: e.detail.email
+      })
+    } else if (e.detail.action == 'signup_complete') {
       utag.link({
         event_name: 'login_signup',
         customer_email: e.detail.email
       })
     } else if (e.detail.action == 'dp_social_account_linked'
-      || e.detail.action == 'dp_social_account_revoked'
-      || e.detail.action == 'dp_new_post') {
+        || e.detail.action == 'dp_social_account_revoked'
+        || e.detail.action == 'dp_new_post') {
       utag.link({
         event_name: e.detail.action,
         detail: e.detail
@@ -125,162 +105,226 @@
       window.location = 'https://www.drpepper.com/s/rewards/' + window.location.search
     } else {
       window.location =
-        'https://www.drpepper.com' +
-        window.location.pathname +
-        window.location.search
+          'https://www.drpepper.com' +
+          window.location.pathname +
+          window.location.search
     }
   } else if (window.location.pathname.indexOf('en/products') !== -1) {
     window.location =
-      'https://products.drpepper.com/en/' +
-      window.location.search
+        'https://products.drpepper.com/en/' +
+        window.location.search
   } else if (window.location.search.indexOf('en%2Fproducts') !== -1) {
     try {
       window.location =
-        'https://products.drpepper.com/en/' +
-        /\?gclid=(.+)/.exec(decodeURIComponent(window.location.search))[0]
+          'https://products.drpepper.com/en/' +
+          /\?gclid=(.+)/.exec(decodeURIComponent(window.location.search))[0]
     } catch (e) { // catches a malformed URI
       console.error(e)
       window.location =
-        'https://products.drpepper.com/en/'
+          'https://products.drpepper.com/en/'
     }
   }
 </script>
 
 <style>
-    /* Tealium footer link */
-    footer li a {
-        color: inherit;
-        font-weight: var(--font-weight_strong);
-        text-decoration: none;
-    }
+  body.comm-page-home div[c-kdpherobase_kdpherobase] a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kdpherobase_kdpherobase] {
+    color: var(--color-maroon) !important;
+  }
 
+  /* Tealium footer link */
+  footer li a {
+    color: inherit;
+    font-weight: var(--font-weight_strong);
+    text-decoration: none;
+  }
+
+  .tl_content {
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .tl_content-heading {
+    position: absolute;
+    top: -120px;
+    width: 100%;
+  }
+
+  /* Tuition 2022 */
+  .comm-page-custom-tuition .tl_content-heading {
+    top: -83px;
+  }
+
+  .comm-page-custom-tuition .kdp-hero .content {
+    padding-top: 120px;
+  }
+
+  .comm-page-custom-tuition .kdp-hero img {
+    max-height: 300px;
+  }
+
+  .comm-page-custom-tuition .intro-text {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .tl_content-heading img,
+  .tl_content-section div > img {
+    width: 260px;
+  }
+
+  .tl_content-block {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tl_content-img {
+    margin-bottom: 1rem;
+    max-width: 312px;
+  }
+
+  .tl_content-content {
+    margin-bottom: 2rem;
+    max-width: 360px;
+  }
+
+  .tl_content-content h2 {
+    font: var(--font-weight_stronger) 1.375rem/1.375rem var(--font-header) !important;
+  }
+
+  .tl_content-prizes {
+    flex-direction: column;
+  }
+
+  .tl_content-prizes .slds-col {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .tl_content-prizes .slds-col:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
     .tl_content {
-        margin: 0 auto;
-        padding: 2rem 0;
-        position: relative;
-        width: 100%;
+      padding: 4rem 0;
+      max-width: 784px;
     }
 
     .tl_content-heading {
-        position: absolute;
-        top: -120px;
-        width: 100%;
+      top: -140px;
+    }
+
+    /* Tuition 2022 */
+    .comm-page-custom-tuition .tl_content-heading {
+      top: -92px;
+    }
+
+    .comm-page-custom-tuition .kdp-hero .content {
+      padding-top: 200px;
+    }
+
+    .comm-page-custom-tuition .kdp-hero img {
+      max-height: unset;
     }
 
     .tl_content-heading img,
     .tl_content-section div > img {
-        width: 260px;
+      width: auto;
     }
 
     .tl_content-block {
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
+      text-align: left;
     }
 
-    .tl_content-img {
-        margin-bottom: 1rem;
-        max-width: 312px;
-    }
-
-    .tl_content-content {
-        margin-bottom: 2rem;
-        max-width: 360px;
-    }
-
-    .tl_content-content h2 {
-        font: var(--font-weight_stronger) 1.375rem/1.375rem var(--font-header) !important;
-    }
-
+    .tl_content-block,
     .tl_content-prizes {
-        flex-direction: column;
+      flex-direction: row;
     }
 
     .tl_content-prizes .slds-col {
-        flex-direction: column;
-        margin-bottom: 3rem;
+      margin-bottom: 0;
     }
+  }
 
-    .tl_content-prizes .slds-col:last-of-type {
-        margin-bottom: 0;
-    }
+  /* Tuition Finalists Style Tweaks */
 
-    @media (min-width: 768px) {
-        .tl_content {
-            padding: 4rem 0;
-            max-width: 784px;
-        }
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    height: 544px;
+    width: 306px;
+  }
 
-        .tl_content-heading {
-            top: -140px;
-        }
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 
-        .tl_content-heading img,
-        .tl_content-section div > img {
-            width: auto;
-        }
+  .champ-finalists-title {
+    font-size: 3.25rem !important;
+    line-height: 1 !important;
+    margin-top: 2.5rem;
+    text-align: center;
+    color: var(--color-maroon_dark);
+  }
 
-        .tl_content-block {
-            text-align: left;
-        }
+  .tl_content-content-finalists {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 560px;
+  }
 
-        .tl_content-block,
-        .tl_content-prizes {
-            flex-direction: row;
-        }
-
-        .tl_content-prizes .slds-col {
-            margin-bottom: 0;
-        }
-    }
-
-    /* Tuition Finalists Style Tweaks */
-
-    .video-responsive {
-        overflow: hidden;
-        padding-bottom: 60%;
-        position: relative;
-        height: 544px;
-        width: 306px;
-    }
-
-    .video-responsive iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-
-    .champ-finalists-title {
-        font-size: 3.25rem !important;
-        line-height: 1 !important;
-        margin-top: 2.5rem;
-        text-align: center;
-        color: var(--color-maroon_dark);
-    }
-
+  @media (min-width: 1024px) {
     .tl_content-content-finalists {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        max-width: 560px;
+      margin-left: 55px;
     }
 
+    @media (min-width: 1440px) {
+      .tl_content-content-finalists {
+        margin-left: 115px;
+      }
+    }
+    body.comm-page-custom-jurassicexclusive .kdp-hero, body.comm-page-custom-jurassicexclusive .kdp-hero .container {
+      max-height: 85vh !important;
+      height: 85vh !important;
+    }
+
+    @media (min-width: 375px) and (min-height: 800px) {
+      body.comm-page-custom-jurassicexclusive .kdp-hero, body.comm-page-custom-jurassicexclusive .kdp-hero .container {
+        max-height: 70vh !important;
+        height: 70vh !important;
+      }
+    }
     @media (min-width: 1024px) {
-        .tl_content-content-finalists {
-            margin-left: 55px;
-        }
-
-        @media (min-width: 1440px) {
-            .tl_content-content-finalists {
-                margin-left: 115px;
-            }
-
+      body.comm-page-custom-jurassicexclusive .kdp-hero, body.comm-page-custom-jurassicexclusive .kdp-hero .container[c-kdpHeroBase_kdpHeroBase] {
+        max-height: 60vh !important;
+        height: 60vh !important;
+        min-height: unset !important;
+      }
+    }
+    @media (min-width: 1024px) {
+      .hidden-on-desktop {
+        display: none;
+      }
+    }
+    @media (max-width: 1023px) {
+      .hidden-on-mobile {
+        display: none;
+      }
+    }
+    @media
 </style>
 <script>
   var grecaptchaReady = false
   var onloadCallback = function () {
-    grecaptchaReady = true
+    grecaptchaReady = true;
     if (window.location.pathname.includes('DrPepper4Barrys')) {
       setTimeout(function () {
         grecaptcha.render(document.querySelector('.g-recaptcha'))
@@ -288,14 +332,17 @@
     }
   }
   var verifyCallback = function (token) {
-    document.dispatchEvent(new CustomEvent('grecaptchaVerified', { 'detail': { response: token } }))
+    document.dispatchEvent(new CustomEvent('grecaptchaVerified', {'detail': {response: token}}))
   }
   var errorCallback = function () {
     document.dispatchEvent(new Event('grecaptchaError'))
   }
   document.addEventListener('grecaptchaRender', function (e) {
-    onloadCallback = function () {
-      grecaptchaReady = true
+    if (grecaptchaReady) {
+      if (e.detail.element.childNodes.length) {
+        console.log('recaptcha already rendered');
+        return;
+      }
       grecaptcha.render(e.detail.element, {
         'sitekey': '6LesKKAeAAAAAKUGgjWLWkKR9JxeRckakEj2gqMj',
         'callback': verifyCallback,
@@ -303,19 +350,27 @@
         'size': 'invisible',
         'badge': e.detail.hasOwnProperty('badge') ? e.detail.badge : 'bottomright'
       })
-    }
-    if (grecaptchaReady) {
-      onloadCallback()
+    } else {
+      console.error('recaptcha not ready');
     }
   })
   document.addEventListener('grecaptchaReset', function () {
-    grecaptcha.reset()
+    if (grecaptchaReady) {
+      grecaptcha.reset()
+    }
   })
   document.addEventListener('grecaptchaExecute', function () {
-    console.log('grecaptcha running')
-    grecaptcha.execute()
+    if (grecaptchaReady) {
+      console.log('grecaptcha running')
+      grecaptcha.execute()
+    } else {
+      alert('Error submitting. Please refresh & try again.');
+    }
   })
 </script>
+
+<!-- BazaarVoice v2 -->
+<script src="https://apps.bazaarvoice.com/deployments/drpepper/main_site/production/en_US/bv.js"></script>
 
 <script>
   // Dark Berry recaptcha
@@ -331,4 +386,62 @@
   }
 </script>
 
-<script src='https://www.google.com/recaptcha/api.js?render=explicit&onload=onloadCallback' async></script>
+<script src='https://www.google.com/recaptcha/api.js?render=explicit&onload=onloadCallback'></script>
+
+<!--<script src="https://www.google.com/recaptcha/api.js"></script>-->
+<script>
+  function timestamp() {
+    var response = document.getElementById("g-recaptcha-response");
+    if (response == null || response.value.trim() == "") {
+      if (document.getElementsByName("captcha_settings")[0]) {
+        var elems = JSON.parse(
+            document.getElementsByName("captcha_settings")[0].value
+        );
+        elems["ts"] = JSON.stringify(new Date().getTime());
+        document.getElementsByName("captcha_settings")[0].value =
+            JSON.stringify(elems);
+      }
+    }
+  }
+
+  if (window.location.href.indexOf('foam-finger') > 0 || window.location.href.indexOf('tuition-form') > 0) {
+
+    setInterval(timestamp, 500);
+  }
+</script>
+
+<!--<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(()=> {
+            if(window.location.href.indexOf('foam-finger') === -1){
+                return;
+            }
+ 			${"video.video-wrapper")addClass("hidden-on-mobile");
+            const foamForm = $('#foam-finger-form');
+            foamForm.submit(function() {
+                try {
+                    fetch("https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8", {
+                      "headers": {
+                        "accept": "text/html",
+                        "access-control-allow-headers": "application/json",
+                        "access-control-allow-origin": "*",
+                        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+                        "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+                        "sec-ch-ua-mobile": "?0",
+                        "sec-ch-ua-platform": "\"macOS\""
+                      },
+                      "referrer": "https://www.drpepper.com/",
+                      "referrerPolicy": "origin-when-cross-origin",
+                      "body": $("#foam-finger-form").serialize(),
+                      "method": "POST",
+                      "mode": "no-cors",
+                      "credentials": "omit"
+                    }).then(response => response.text()).then(() => window.location.replace('/s/fansville-foam-finger-warehouse/completed'));
+                } catch {
+                    window.location.replace('/s/fansville-foam-finger-warehouse/completed');
+                }
+                return false;
+            });
+        }, 1000);
+	});
+</script>-->
