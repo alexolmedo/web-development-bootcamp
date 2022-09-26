@@ -779,3 +779,141 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
 .comm-page-custom-tuition-completed .kdp-hero .contentBranding_column img {
   height: auto !important;
 }
+
+/**** HAIL MARY STYLING BEGINS ****/
+
+.comm-page-custom-completed .contentBranding_column, .comm-page-custom-hail-mary-contest-over .contentBranding_column {
+  display: block !important;
+}
+
+.comm-page-custom-hailmary .container, .comm-page-custom-completed .container, .comm-page-custom-hail-mary-contest-over .container {
+  /*display: none;*/
+}
+
+body.comm-page-custom-hailmary .kdp-hero-bg {
+  background-position: center center !important;
+}
+
+body.comm-page-custom-hailmary .wrapper.slds-var-p-bottom_large {
+  color: white;
+  width: 90%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 875px;
+}
+
+body.comm-page-custom-hailmary p {
+  font-size: 16px !important;
+  line-height: 26px !important;
+}
+
+body.comm-page-custom-hailmary p b {
+  font-size: 18px !important;
+}
+
+body.comm-page-custom-hailmary .disclaimer {
+  font-size: 12px !important;
+}
+
+body.comm-page-custom-hailmary form {
+  width: 100%;
+}
+
+body.comm-page-custom-hailmary form input[type='text'],
+body.comm-page-custom-hailmary form textarea[type='text'] {
+  width: 100%;
+  min-height: 50px;
+  display: block;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  color: #010000;
+  padding: 0 10px;
+}
+
+body.comm-page-custom-hailmary form select {
+  width: 100%;
+  min-height: 50px;
+  display: block;
+  color: #010000;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+}
+
+body.comm-page-custom-hailmary form select option {
+  padding: 10px;
+}
+
+body.comm-page-custom-hailmary h2 {
+  font-size: 26px !important;
+  line-height: 1.1 !important;
+}
+
+body.comm-page-custom-hailmary h3 {
+  font-size: 18px !important;
+  line-height: 1.1 !important;
+  font-weight: 800 !important;
+}
+
+body.comm-page-custom-hailmary ul {
+  padding-left: 0;
+}
+
+body.comm-page-custom-hailmary ul li {
+  padding-left: 0.7em;
+}
+
+body.comm-page-custom-hailmary ul li span {
+  position: relative;
+  left: 0.5em;
+}
+
+@media (max-width: 767px) {
+  .comm-page-custom-hailmary .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    height: 120vw;
+    min-height: auto;
+  }
+
+  .comm-page-custom-completed .contentBranding_column[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase],
+  .comm-page-custom-hail-mary-contest-over .contentBranding_column[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  body.comm-page-custom-hailmary .image-text {
+    display: flex !important;
+    align-items: start !important;
+    flex-direction: column !important;
+  }
+
+  body.comm-page-custom-hailmary .image-text img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  body.comm-page-custom-hailmary .image-text > div {
+    padding-left: 0 !important;
+  }
+
+  body.comm-page-custom-hailmary h2 {
+    font-size: 26px;
+    line-height: 1.1 !important;
+    text-align: left !important;
+  }
+
+  body.comm-page-custom-hailmary h3 {
+    font-size: 20px;
+    line-height: 1.1 !important;
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .comm-page-custom-hailmary .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    height: 56vw;
+    min-height: auto;
+  }
+}
+
+/**** HAIL MARY STYLING ENDS ****/
