@@ -1,44 +1,45 @@
-c-kdp-user-profile .wrapper {
-    padding-top: 40px;
+qc-kdp-user-profile .wrapper {
+  padding-top: 40px;
 }
 
 @media (min-width: 768px) {
-    .packContent_content[c-packHomeMaster_packHomeMaster] {
-        margin-top: 200px !important;
-    }
+  .packContent_content[c-packHomeMaster_packHomeMaster] {
+    margin-top: 200px !important;
+  }
 }
+
 
 .kdp-footer_branding[c-kdpGlobalFooter_kdpGlobalFooter] .dr-pepper[c-kdpGlobalFooter_kdpGlobalFooter],
 .kdp-branding[c-kdpThemeHeader_kdpThemeHeader] .home[c-kdpThemeHeader_kdpThemeHeader] {
-    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/dr-pepper.svg) !important;
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/dr-pepper.svg) !important;
 }
 
 ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="instagram"][c-kdpNavMenu_kdpNavMenu] {
-    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-instagram.svg) !important;
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-instagram.svg) !important;
 }
 
 ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="facebook"][c-kdpNavMenu_kdpNavMenu] {
-    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-facebook.svg) !important;
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-facebook.svg) !important;
 }
 
 ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="twitter"][c-kdpNavMenu_kdpNavMenu] {
-    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-twitter.svg) !important;
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-twitter.svg) !important;
 }
 
 ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="youtube"][c-kdpNavMenu_kdpNavMenu] {
-    background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-youtube.svg) !important;
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-youtube.svg) !important;
 }
 
 .social-buttons.facebook::before {
-    content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-facebook-auth.svg) !important;
+  content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-facebook-auth.svg) !important;
 }
 
 .social-buttons.google::before {
-    content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-google-auth.svg) !important;
+  content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-google-auth.svg) !important;
 }
 
 .social-buttons.apple::before {
-    content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/ICON-APPLE.svg) !important;
+  content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/ICON-APPLE.svg) !important;
 }
 
 /*.signup-form_container li{
@@ -50,244 +51,731 @@ ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNav
 }*/
 
 video {
-    background-color: rgb(144, 13, 44);
+  background-color: rgb(144, 13, 44);
 }
 
 
 @media (max-width: 768px) {
-    c-kdp-hero-base .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
-        min-height: 780px;
-    }
+  c-kdp-hero-base .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    min-height: 780px;
+  }
 
-    .comm-page-home #kdp-hero .forceCommunityThemeHeroBase[style] {
-        padding-bottom: 4rem !important;
-        padding-top: 5rem !important;
-    }
+  .comm-page-home #kdp-hero .forceCommunityThemeHeroBase[style] {
+    padding-bottom: 4rem !important;
+    padding-top: 5rem !important;
+  }
 
-    .comm-page-home #kdp-hero .bgImage {
-        background-image: url('/sfsites/c/file-asset/HERO_IMAGE2x') !important;
-    }
+  .comm-page-home #kdp-hero .bgImage {
+    background-image: url('/sfsites/c/file-asset/HERO_IMAGE2x') !important;
+  }
 
 
-    .comm-page-custom-rewards-jump #kdp-hero .bgImage {
-        background-image: url('/sfsites/c/file-asset/HEROMOBILE2x') !important;
-    }
+  .comm-page-custom-rewards-jump #kdp-hero .bgImage {
+    background-image: url('/sfsites/c/file-asset/HEROMOBILE2x') !important;
+  }
 }
 
 @keyframes spinner {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .detailsData:empty:before {
-    content: '';
-    box-sizing: border-box;
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border-top: 4px solid #900D2C;
-    border-right: 2px solid transparent;
-    animation: spinner .6s linear infinite;
+  content: '';
+  box-sizing: border-box;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-top: 4px solid #900D2C;
+  border-right: 2px solid transparent;
+  animation: spinner .6s linear infinite;
 }
 
 .comm-page-custom-unbsubscribe .kdp-button.button-ghost.ghost-primary {
-    border-color: white !important;
+  border-color: white !important;
 }
 
 .slds-form-element__control[c-kdpUserProfile_kdpUserProfile] > a[title="Change Password"][c-kdpUserProfile_kdpUserProfile] {
-    font-size: 0.8rem !important;
+  font-size: 0.8rem !important;
 }
 
 .button-wrapper[c-kdpUserProfile_kdpUserProfile] {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .packContent_content {
-    padding-bottom: 120px !important;
+  padding-bottom: 120px !important;
 }
 
 
 .comm-page-custom-pack-onboarding .forceCommunityFlowCommunity {
-    border: none;
+  border: none;
 }
 
 .comm-page-custom-pack-onboarding lightning-formatted-rich-text.flowruntime-inline span {
-    font-size: 1.3em;
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    margin-left: 5px;
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
-    min-height: 750px !important;
+  min-height: 750px !important;
 }
 
 /* Custom styles for Berries and Cream */
 .contentBlockSection[style*="drpepper.com/cms/delivery/media/MCYI6DOIJ25ZEHJNG7KVOKLGRVM4"] h2 {
-    max-width: 500px
+  max-width: 500px
 }
 
 body.comm-page-custom-berries-and-cream .kdp-hero-bg {
-    background: url(https://www.drpepper.com/cms/delivery/media/MCYI6DOIJ25ZEHJNG7KVOKLGRVM4), rgb(220, 30, 165) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+  background: url(https://www.drpepper.com/cms/delivery/media/MCYI6DOIJ25ZEHJNG7KVOKLGRVM4), rgb(220, 30, 165) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 body.comm-page-custom-berries-and-cream .btn-join {
-    transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 body.comm-page-custom-berries-and-cream .btn-join:hover {
-    filter: saturate(70%);
+  filter: saturate(70%);
 }
 
 @media (max-width: 768px) {
-    body.comm-page-custom-berries-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
-        height: 25vh !important;
-    }
+  body.comm-page-custom-berries-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+    height: 25vh !important;
+  }
 }
 
 @media (max-width: 768px) {
-    body.comm-page-custom-cherry-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
-        height: 25vh !important;
-    }
+  body.comm-page-custom-cherry-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+    height: 25vh !important;
+  }
 }
 
 /***************************************** Custom styles for Dark Berry *********************************************/
 body.comm-page-custom-dr-pepper4-barrys #body-content,
 body.comm-page-custom-thank-you-berry-much #body-content,
 body.comm-page-custom-sold-out-berry #body-content {
-    background-color: #2b338c;
+  background-color: #2b338c;
 }
 
 body.comm-page-custom-thank-you-berry-much #body-content {
-    background-color: #2b338c;
-    display: flex;
-    align-items: center;
+  background-color: #2b338c;
+  display: flex;
+  align-items: center;
 }
 
 
 body.comm-page-custom-dr-pepper4-barrys .kdp-hero-bg {
-    background: url(https://stg-my.drpepper.com/cms/delivery/media/MC7FYPTCDDOZE3HKLUBAJK7T3XNI), #2b338c !important;
-    background-position: bottom center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+  background: url(https://stg-my.drpepper.com/cms/delivery/media/MC7FYPTCDDOZE3HKLUBAJK7T3XNI), #2b338c !important;
+  background-position: bottom center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 body.comm-page-custom-dr-pepper4-barrys .content[c-kdpHeroBase_kdpHeroBase] {
-    padding-bottom: 40%;
+  padding-bottom: 40%;
 }
 
 body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
-    font-size: 25px !important;
-    line-height: 1 !important;
+  font-size: 25px !important;
+  line-height: 1 !important;
 }
 
 body.comm-page-custom-dr-pepper4-barrys h1.slds-var-m-top_medium {
-    margin-top: 10px !important;
-    margin-bottom: 25px !important;
-    margin-left: -3px !important;
-    font-size: 61px !important;
-    font-family: aktiv-grotesk-extended, sans-serif !important;
-    font-weight: 900 !important;
-    font-style: normal !important;
+  margin-top: 10px !important;
+  margin-bottom: 25px !important;
+  margin-left: -3px !important;
+  font-size: 61px !important;
+  font-family: aktiv-grotesk-extended, sans-serif !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
 }
 
 body.comm-page-custom-dr-pepper4-barrys .g-recaptcha > div {
-    margin: auto;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
-    body.comm-page-custom-dr-pepper4-barrys .kdp-hero-bg {
-        background: url(https://stg-my.drpepper.com/cms/delivery/media/MC23NRIG3JGRDVBPCASNN2ESPU4A), #2b338c !important;
-        background-position: bottom center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-    }
+  body.comm-page-custom-dr-pepper4-barrys .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MC23NRIG3JGRDVBPCASNN2ESPU4A), #2b338c !important;
+    background-position: bottom center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
 
-    body.comm-page-custom-dr-pepper4-barrys .content[c-kdpHeroBase_kdpHeroBase] {
-        padding-bottom: 20%;
-    }
+  body.comm-page-custom-dr-pepper4-barrys .content[c-kdpHeroBase_kdpHeroBase] {
+    padding-bottom: 20%;
+  }
 
-    body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
-        font-size: 38.5px !important;
-    }
+  body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+    font-size: 38.5px !important;
+  }
 
-    body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
-        font-size: 38.5px !important;
-    }
+  body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+    font-size: 38.5px !important;
+  }
 
-    body.comm-page-custom-dr-pepper4-barrys h1.slds-var-m-top_medium {
-        margin-top: 10px !important;
-        margin-bottom: 25px !important;
-        margin-left: -5px !important;
-        font-size: 94px !important;
-    }
+  body.comm-page-custom-dr-pepper4-barrys h1.slds-var-m-top_medium {
+    margin-top: 10px !important;
+    margin-bottom: 25px !important;
+    margin-left: -5px !important;
+    font-size: 94px !important;
+  }
 
-    body.comm-page-custom-dr-pepper4-barrys p.slds-var-m-top_small.regular-text {
-        max-width: 470px;
-    }
+  body.comm-page-custom-dr-pepper4-barrys p.slds-var-m-top_small.regular-text {
+    max-width: 470px;
+  }
 }
 
 body.comm-page-custom-dr-pepper4-barrys form {
-    width: 100%;
+  width: 100%;
 }
 
 body.comm-page-custom-dr-pepper4-barrys form input:not(.kdp-button), body.comm-page-custom-dr-pepper4-barrys form textarea {
-    width: 100%;
-    display: block;
-    margin-bottom: 1rem;
-    min-height: 3rem;
-    color: black !important;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+  color: black !important;
 }
 
 body.comm-page-custom-dr-pepper4-barrys form select {
-    margin-bottom: 1rem;
-    min-height: 3rem;
-    color: black !important;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+  color: black !important;
+}
+
+c-kdp-user-profile .wrapper {
+  padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .packContent_content[c-packHomeMaster_packHomeMaster] {
+    margin-top: 200px !important;
+  }
+}
+
+.kdp-footer_branding[c-kdpGlobalFooter_kdpGlobalFooter] .dr-pepper[c-kdpGlobalFooter_kdpGlobalFooter],
+.kdp-branding[c-kdpThemeHeader_kdpThemeHeader] .home[c-kdpThemeHeader_kdpThemeHeader] {
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/dr-pepper.svg) !important;
+}
+
+ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="instagram"][c-kdpNavMenu_kdpNavMenu] {
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-instagram.svg) !important;
+}
+
+ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="facebook"][c-kdpNavMenu_kdpNavMenu] {
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-facebook.svg) !important;
+}
+
+ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="twitter"][c-kdpNavMenu_kdpNavMenu] {
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-twitter.svg) !important;
+}
+
+ul.Social_Media_Links.context-footer-social[c-kdpNavMenu_kdpNavMenu] li[c-kdpNavMenu_kdpNavMenu] a[href*="youtube"][c-kdpNavMenu_kdpNavMenu] {
+  background-image: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-youtube.svg) !important;
+}
+
+.social-buttons.facebook::before {
+  content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-facebook-auth.svg) !important;
+}
+
+.social-buttons.google::before {
+  content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/icon-google-auth.svg) !important;
+}
+
+.social-buttons.apple::before {
+  content: url(https://www.drpepper.com/s/sfsites/c/resource/KDP_Assets/images/ICON-APPLE.svg) !important;
+}
+
+/*.signup-form_container li{
+    width:49% !important;
+}
+
+.signup-form_container .slds-tabs_default__overflow-button{
+    display:none !important;
+}*/
+
+video {
+  background-color: rgb(144, 13, 44);
+}
+
+
+@media (max-width: 768px) {
+  c-kdp-hero-base .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    min-height: 780px;
+  }
+
+  .comm-page-home #kdp-hero .forceCommunityThemeHeroBase[style] {
+    padding-bottom: 4rem !important;
+    padding-top: 5rem !important;
+  }
+
+  .comm-page-home #kdp-hero .bgImage {
+    background-image: url('/sfsites/c/file-asset/HERO_IMAGE2x') !important;
+  }
+
+
+  .comm-page-custom-rewards-jump #kdp-hero .bgImage {
+    background-image: url('/sfsites/c/file-asset/HEROMOBILE2x') !important;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.detailsData:empty:before {
+  content: '';
+  box-sizing: border-box;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-top: 4px solid #900D2C;
+  border-right: 2px solid transparent;
+  animation: spinner .6s linear infinite;
+}
+
+.comm-page-custom-unbsubscribe .kdp-button.button-ghost.ghost-primary {
+  border-color: white !important;
+}
+
+.slds-form-element__control[c-kdpUserProfile_kdpUserProfile] > a[title="Change Password"][c-kdpUserProfile_kdpUserProfile] {
+  font-size: 0.8rem !important;
+}
+
+.button-wrapper[c-kdpUserProfile_kdpUserProfile] {
+  margin-top: 40px;
+}
+
+.packContent_content {
+  padding-bottom: 120px !important;
+}
+
+
+.comm-page-custom-pack-onboarding .forceCommunityFlowCommunity {
+  border: none;
+}
+
+.comm-page-custom-pack-onboarding lightning-formatted-rich-text.flowruntime-inline span {
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+  min-height: 750px !important;
+}
+
+/* Custom styles for Berries and Cream */
+.contentBlockSection[style*="drpepper.com/cms/delivery/media/MCYI6DOIJ25ZEHJNG7KVOKLGRVM4"] h2 {
+  max-width: 500px
+}
+
+body.comm-page-custom-berries-and-cream .kdp-hero-bg {
+  background: url(https://www.drpepper.com/cms/delivery/media/MCYI6DOIJ25ZEHJNG7KVOKLGRVM4), rgb(220, 30, 165) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+body.comm-page-custom-berries-and-cream .btn-join {
+  transition: 0.2s all ease-in-out;
+}
+
+body.comm-page-custom-berries-and-cream .btn-join:hover {
+  filter: saturate(70%);
+}
+
+@media (max-width: 768px) {
+  body.comm-page-custom-berries-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+    height: 25vh !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body.comm-page-custom-cherry-and-cream .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+    height: 25vh !important;
+  }
+}
+
+/***************************************** Custom styles for Dark Berry *********************************************/
+body.comm-page-custom-dr-pepper4-barrys #body-content,
+body.comm-page-custom-thank-you-berry-much #body-content,
+body.comm-page-custom-sold-out-berry #body-content {
+  background-color: #2b338c;
+}
+
+body.comm-page-custom-thank-you-berry-much #body-content {
+  background-color: #2b338c;
+  display: flex;
+  align-items: center;
+}
+
+
+body.comm-page-custom-dr-pepper4-barrys .kdp-hero-bg {
+  background: url(https://stg-my.drpepper.com/cms/delivery/media/MC7FYPTCDDOZE3HKLUBAJK7T3XNI), #2b338c !important;
+  background-position: bottom center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+body.comm-page-custom-dr-pepper4-barrys .content[c-kdpHeroBase_kdpHeroBase] {
+  padding-bottom: 40%;
+}
+
+body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+  font-size: 25px !important;
+  line-height: 1 !important;
+}
+
+body.comm-page-custom-dr-pepper4-barrys h1.slds-var-m-top_medium {
+  margin-top: 10px !important;
+  margin-bottom: 25px !important;
+  margin-left: -3px !important;
+  font-size: 61px !important;
+  font-family: aktiv-grotesk-extended, sans-serif !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+}
+
+body.comm-page-custom-dr-pepper4-barrys .g-recaptcha > div {
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  body.comm-page-custom-dr-pepper4-barrys .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MC23NRIG3JGRDVBPCASNN2ESPU4A), #2b338c !important;
+    background-position: bottom center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  body.comm-page-custom-dr-pepper4-barrys .content[c-kdpHeroBase_kdpHeroBase] {
+    padding-bottom: 20%;
+  }
+
+  body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+    font-size: 38.5px !important;
+  }
+
+  body.comm-page-custom-dr-pepper4-barrys h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+    font-size: 38.5px !important;
+  }
+
+  body.comm-page-custom-dr-pepper4-barrys h1.slds-var-m-top_medium {
+    margin-top: 10px !important;
+    margin-bottom: 25px !important;
+    margin-left: -5px !important;
+    font-size: 94px !important;
+  }
+
+  body.comm-page-custom-dr-pepper4-barrys p.slds-var-m-top_small.regular-text {
+    max-width: 470px;
+  }
+}
+
+body.comm-page-custom-dr-pepper4-barrys form {
+  width: 100%;
+}
+
+body.comm-page-custom-dr-pepper4-barrys form input:not(.kdp-button), body.comm-page-custom-dr-pepper4-barrys form textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+  color: black !important;
+}
+
+body.comm-page-custom-dr-pepper4-barrys form select {
+  margin-bottom: 1rem;
+  min-height: 3rem;
+  color: black !important;
 }
 
 /************************************* Custom styles for Rewards Jurassic World ****************************************/
 
 body.comm-page-custom-rewards-jurassic-world .kdp-hero-bg {
-    background: url(https://stg-my.drpepper.com/cms/delivery/media/MCJ2BVKAXCQRH3LCOEUMVV3SCAF4), rgb(144, 13, 44) !important;
+  background: url(https://stg-my.drpepper.com/cms/delivery/media/MCJ2BVKAXCQRH3LCOEUMVV3SCAF4), rgb(144, 13, 44) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top right !important;
+}
+
+body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase] {
+  height: auto !important;
+  width: 432px !important;
+}
+
+@media (min-width: 768px) {
+  body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpHeroBase_kdpHeroBase] {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  body.comm-page-custom-rewards-jurassic-world .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MCH4SDSO5BSZAIJLFKRXTHSNVXSU), rgb(144, 13, 44) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top center !important;
+  }
+
+  body.comm-page-custom-rewards-jurassic-world .kdp-hero .container[c-kdpHeroBase_kdpHeroBase] {
+    padding-top: 20vh;
+  }
+
+  body.comm-page-custom-rewards-jurassic-world h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
+    line-height: 1 !important;
+  }
+
+  body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+    height: auto !important;
+    width: 70% !important;
+  }
+}
+
+/************************************** Custom styles for Jurassic World Homepage *************************************/
+/*body.comm-page-home .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MCM77KT34NDNBS7JZ2ATEU7H36W4), #2b338c !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: top right !important;
 }
 
-body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase] {
-    height: auto !important;
-    width: 432px !important;
+body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kdpherobase_kdpherobase] {
+    color: #2b338c !important;
 }
 
-@media (min-width: 768px) {
-    body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpHeroBase_kdpHeroBase] {
-        justify-content: space-around;
+@media (max-width: 768px) {
+    body.comm-page-home .kdp-hero-bg {
+        background: url(https://stg-my.drpepper.com/cms/delivery/media/MCPYL4GPGBQZENPP636O5C5TLKYY), #2b338c !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: top right !important;
     }
+
+    body.comm-page-home .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+        height: auto !important;
+        width: 100% !important;
+    }
+}*/
+
+/************************************** Custom styles for Football Campaign Homepage & Rewards *************************************/
+body.comm-page-home .kdp-hero-bg {
+  background: url(https://www.drpepper.com/cms/delivery/media/MC4DSUG3DSRRFPXMFIYTSFEM4CJU), #a51d31 !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top left !important;
+}
+
+body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kdpherobase_kdpherobase] {
+  color: #900d2c !important;
+}
+
+@media (max-width: 579px) {
+  body.comm-page-home .kdp-hero-bg {
+    background-size: contain !important;
+    background: url(https://www.drpepper.com/cms/delivery/media/MCKPKFDJU7UJDTLE2FAIJUWJ3QMY), #a51d31 !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: top center !important;
+  }
+
+  body.comm-page-custom-rewards .contentBranding_column[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase] {
+    height: auto !important;
+    width: 100% !important;
+    visibility: hidden;
+  }
+
+  body.comm-page-custom-rewards .kdp-hero-bg {
+    background-size: contain !important;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 768px) {
+  body.comm-page-home .kdp-hero-bg {
+    background: url(https://www.drpepper.com/cms/delivery/media/MCKPKFDJU7UJDTLE2FAIJUWJ3QMY), #a51d31 !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top center !important;
+  }
+
+  body.comm-page-home .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+
+/* Foam Finger Warehouse campaign */
+
+.comm-page-custom-fansville-foam-finger-warehouse video.video-wrapper[c-kdpHeroBase_kdpHeroBase] {
+  max-height: 56.26vw;
+  position: initial !important;
+  transform: none !important;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse .container p.regular-text {
+  padding-top: 20px;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse .container h2 {
+  padding-top: 4rem;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+  display: none;
+}
+
+.comm-page-custom-fansville-foam-finger-warehouse select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(https://stg-www.drpepper.com/cms/delivery/media/MCR42AKGJUWZGEDAQNDNBZQJSYZM);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem) 50%;
+}
+
+@media (max-width: 1023px) {
+  .comm-page-custom-fansville-foam-finger-warehouse .video-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
-    body.comm-page-custom-rewards-jurassic-world .kdp-hero-bg {
-        background: url(https://stg-my.drpepper.com/cms/delivery/media/MCH4SDSO5BSZAIJLFKRXTHSNVXSU), rgb(144, 13, 44) !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-position: top center !important;
-    }
+  .comm-page-custom-fansville-foam-finger-warehouse form#foam-finger-form {
+    width: 100% !important;
+  }
 
-    body.comm-page-custom-rewards-jurassic-world .kdp-hero .container[c-kdpHeroBase_kdpHeroBase] {
-        padding-top: 20vh;
-    }
+  .comm-page-custom-fansville-foam-finger-warehouse form#foam-finger-form .submit-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
-    body.comm-page-custom-rewards-jurassic-world h3.contentCaption.slds-var-m-top_medium[c-kdpherobase_kdpherobase] {
-        line-height: 1 !important;
-    }
+.comm-page-custom-fansville-foam-finger-warehouse #body-content {
+  background: url(https://stg-www.drpepper.com/cms/delivery/media/MC3JFLHH7PA5AXNJ2ULKP3N5BDWA), rgb(144, 13, 44);
+  background-size: contain;
+}
 
-    body.comm-page-custom-rewards-jurassic-world .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
-        height: auto !important;
-        width: 70% !important;
-    }
+.comm-page-custom-completed .contentBranding_column {
+  display: block !important;
+}
+
+@media (max-width: 767px) {
+  .comm-page-custom-completed .content[c-kdpHeroBase_kdpHeroBase] .contentBranding_column p.intro-text[c-kdpHeroBase_kdpHeroBase] {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .comm-page-custom-completed .contentBranding_column small {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .comm-page-home .kdp-button-group[c-kdpHeroBase_kdpHeroBase] {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comm-page-home .kdp-button-group[c-kdpHeroBase_kdpHeroBase] .secondary-cta {
+    margin: 20px 0 0 2.5rem;
+  }
+
+  .comm-page-home .kdp-button-group[c-kdpHeroBase_kdpHeroBase] .kdp-button.primary-cta[c-kdpHeroBase_kdpHeroBase] {
+    max-width: unset;
+  }
+
+  #tuition-form-wrapper form, #foam-finger-form form {
+    width: 75%;
+  }
+
+  .comm-page-custom-tuition .legal-copy {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .text-align_center-mobile {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .comm-page-custom-completed .contentBranding_column small {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comm-page-custom-out-of-stock .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase], .comm-page-custom-completed .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    height: calc(100vh - 8rem);
+  }
+
+  #tuition-form-wrapper form, #foam-finger-form form {
+    width: 45%;
+  }
+
+  .comm-page-custom-tuition-completed .regular-text {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comm-page-custom-tuition .legal-copy {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+}
+
+.comm-page-custom-completed .container {
+  display: none;
+}
+
+.comm-page-custom-out-of-stock .contentBranding_column {
+  display: block !important;
+}
+
+.comm-page-custom-out-of-stock .contentBranding_column h1 {
+  text-transform: none;
+}
+
+.comm-page-custom-out-of-stock .contentBranding_column .regular-text {
+  padding-top: 20px;
+}
+
+.comm-page-custom-completed .kdp-button-group {
+  display: none;
+}
+
+.comm-page-custom-out-of-stock .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase], .comm-page-custom-okay .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+  min-height: fit-content;
+}
+
+.comm-page-custom-out-of-stock .container {
+  display: none;
+}
+
+.comm-page-custom-tuition-form .container {
+  display: none;
+}
+
+.comm-page-custom-tuition-completed .container {
+  display: none;
+}
+
+.comm-page-custom-tuition-completed .kdp-hero .contentBranding_column {
+  display: block !important;
+}
+
+.comm-page-custom-tuition-completed .kdp-hero .contentBranding_column img {
+  height: auto !important;
 }
