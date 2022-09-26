@@ -449,7 +449,8 @@ body.comm-page-custom-dr-pepper4-barrys h1.slds-var-m-top_medium {
   font-style: normal !important;
 }
 
-body.comm-page-custom-dr-pepper4-barrys .g-recaptcha > div {
+body.comm-page-custom-dr-pepper4-barrys .g-recaptcha > div,
+body.comm-page-custom-hailmary .g-recaptcha > div {
   margin: auto;
 }
 
@@ -884,7 +885,7 @@ body.comm-page-custom-hailmary ul li span {
     min-height: auto !important;
   }
 
-  .comm-page-custom-completed .contentBranding_column[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase],
+  .comm-page-custom-completed-1 .contentBranding_column[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase],
   .comm-page-custom-hail-mary-contest-over .contentBranding_column[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
     height: auto !important;
     width: 100% !important;
