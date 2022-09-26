@@ -325,7 +325,7 @@
   var grecaptchaReady = false
   var onloadCallback = function () {
     grecaptchaReady = true;
-    if (window.location.pathname.includes('DrPepper4Barrys')) {
+    if (window.location.pathname.includes('DrPepper4Barrys')||window.location.pathname.includes('hailmary')) {
       setTimeout(function () {
         grecaptcha.render(document.querySelector('.g-recaptcha'))
       }, 1500)
@@ -374,7 +374,7 @@
 
 <script>
   // Dark Berry recaptcha
-  if (window.location.pathname.includes('DrPepper4Barrys')) {
+  if (window.location.pathname.includes('DrPepper4Barrys')||window.location.pathname.includes('hailmary')) {
     setInterval(function () {
       var response = document.getElementById('g-recaptcha-response')
       if (response == null || response.value.trim() == '') {

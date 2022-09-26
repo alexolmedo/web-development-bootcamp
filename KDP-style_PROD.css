@@ -781,13 +781,23 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
 }
 
 /**** HAIL MARY STYLING BEGINS ****/
+body.comm-page-custom-hailmary #body-content {
+  background-color: #900d2c;
+}
 
-.comm-page-custom-completed .contentBranding_column, .comm-page-custom-hail-mary-contest-over .contentBranding_column {
+.comm-page-custom-completed-1 .contentBranding_column, .comm-page-custom-hail-mary-contest-over .contentBranding_column {
   display: block !important;
 }
 
-.comm-page-custom-hailmary .container, .comm-page-custom-completed .container, .comm-page-custom-hail-mary-contest-over .container {
-  /*display: none;*/
+.comm-page-custom-completed-1 .siteforceContentArea,
+.comm-page-custom-hail-mary-contest-over .siteforceContentArea {
+  text-align: center;
+}
+
+.comm-page-custom-hailmary .container,
+.comm-page-custom-completed-1 .container,
+.comm-page-custom-hail-mary-contest-over .container {
+  display: none;
 }
 
 body.comm-page-custom-hailmary .kdp-hero-bg {
@@ -870,8 +880,8 @@ body.comm-page-custom-hailmary ul li span {
 
 @media (max-width: 767px) {
   .comm-page-custom-hailmary .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
-    height: 120vw;
-    min-height: auto;
+    height: 120vw !important;
+    min-height: auto !important;
   }
 
   .comm-page-custom-completed .contentBranding_column[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase],
@@ -911,8 +921,8 @@ body.comm-page-custom-hailmary ul li span {
 
 @media (min-width: 768px) {
   .comm-page-custom-hailmary .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
-    height: 56vw;
-    min-height: auto;
+    height: 56vw !important;
+    min-height: auto !important;
   }
 }
 
