@@ -83,15 +83,12 @@
     <div class="slds-grid slds-gutters slds-wrap slds-align_absolute-center slds-var-m-top_large">
       <div class="slds-col slds-size_12-of-12 slds-large-size_5-of-12 hiw-col" style="padding: 0 !important;">
         <div class="slds-align_absolute-center slds-var-m-bottom_large">
-          <form action="https://pepperpack--stage.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8"
-                method="POST">
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
             <input type=hidden name='captcha_settings'
-                   value='{"keyname":"Test","fallback":"true","orgId":"00D530000008fvL","ts":""}'>
-            <input type=hidden name="orgid" value="00D530000008fvL">
-            <input type=hidden name="retURL" value="https://stg-www.drpepper.com/s/hailmary/completed">
-            <input type="hidden" name="origin" value="Web"/>
-            <input type="hidden" name="subject" value="Hail Mary"/>
+                   value='{"keyname":"Dr_Pepper_PROD","fallback":"true","orgId":"00D3h0000017hfB","ts":""}'>
+            <input type=hidden name="orgid" value="00D3h0000017hfB">
+            <input type=hidden name="retURL" value="https://www.drpepper.com/s/hailmary/completed">
 
             <!--  ----------------------------------------------------------------------  -->
             <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -101,34 +98,37 @@
             <!--  value=“kelley.wang@publicissapient.com”>                                -->
             <!--  ----------------------------------------------------------------------  -->
 
-            First Name*
-            <input required id="00N53000000MVXG" maxlength="50" name="00N53000000MVXG" size="20" type="text"/>
+            TikTok Handle:
+            <input id="00N3h00000IsyGp" maxlength="200" name="00N3h00000IsyGp" size="20" type="text"/>
 
-            Last Name*
-            <input required id="00N53000000MVXH" maxlength="50" name="00N53000000MVXH" size="20" type="text"/>
+            TikTok Video URL:
+            <input id="00N3h00000IsyGu" maxlength="255" name="00N3h00000IsyGu" size="20" type="text"/>
 
-            <label for="email">Email*</label>
-            <input required id="email" maxlength="80" name="email" size="20" type="text"/>
+            School:
+            <input id="00N3h00000IsyGf" maxlength="255" name="00N3h00000IsyGf" size="20" type="text"/>
 
-            <label for="phone">Phone Number*</label>
-            <input required id="phone" maxlength="40" name="phone" size="20" type="text"/>
+            First Name:
+            <input id="00N3h00000Ig39D" maxlength="50" name="00N3h00000Ig39D" size="20" type="text"/>
 
-            Date of Birth (MM/DD/YYYY)*<span class="dateInput dateOnlyInput">
-              <input required id="00N53000000qufO" name="00N53000000qufO" size="12" type="text"/></span>
+            Last Name:
+            <input id="00N3h00000Ig39E" maxlength="50" name="00N3h00000Ig39E" size="20" type="text"/>
 
-            TikTok or Instagram Handle (note N/A if not applicable)*
-            <input required id="00N53000000MVXJ" maxlength="50" name="00N53000000MVXJ" size="20" type="text"/>
+            Date of Birth:<span class="dateInput dateOnlyInput">
+            <input id="00N3h00000IsyGk" name="00N3h00000IsyGk" size="12" type="text"/></span>
 
-            What is your business or product name?*
-            <input required id="00N53000001XDD9" maxlength="255" name="00N53000001XDD9" size="20" type="text"/>
+            <label for="phone">Phone</label>
+            <input id="phone" maxlength="40" name="phone" size="20" type="text"/>
 
-            Please share either your website url, presentation or photo or video link that would help illustrate your
-            idea via link (ie Dropbox, Google Drive, WeTransfer). All Links must be Publicly Accessible.*
-            <input required id="00N53000001XDDE" placeholder="http://" maxlength="512" name="00N53000001XDDE" size="20"
-                   type="text"/>
+            <label for="description">Description</label>
+            <textarea id="description" name="description" type="text"></textarea>
 
-            What category describes your business or product? (check all that apply)*
-            <select required id="00N53000001XDD7" multiple="multiple" name="00N53000001XDD7" title="Business Category">
+            Business/Product Name:
+            <input id="00N3h00000IszC7" maxlength="255" name="00N3h00000IszC7" size="20" type="text"/>
+
+            Website URL:<input id="00N3h00000IszCC" maxlength="255" name="00N3h00000IszCC" size="20" type="text"/>
+
+            Business Category:
+            <select id="00N3h00000IszC5" multiple="multiple" name="00N3h00000IszC5" title="Business Category">
               <option value="Technology">Technology</option>
               <option value="App / Website">App / Website</option>
               <option value="Housewares / Home Design">Housewares / Home Design</option>
@@ -145,8 +145,8 @@
               <option value="Holiday">Holiday</option>
             </select>
 
-            What category describes the current phase of your business or product? (check one)*
-            <select required id="00N53000001XDD8" multiple="multiple" name="00N53000001XDD8" title="Business Phase">
+            Business Phase:
+            <select id="00N3h00000IszC6" multiple="multiple" name="00N3h00000IszC6" title="Business Phase">
               <option value="Idea">Idea</option>
               <option value="Research &amp; Development">Research &amp; Development</option>
               <option value="Prototype/Beta Testing">Prototype/Beta Testing</option>
@@ -154,17 +154,20 @@
               <option value="Operating/Shipping">Operating/Shipping</option>
             </select>
 
-            Provide your business/invention/innovation elevator pitch in 15 words or less*
-            <textarea required id="00N53000001XDDA" name="00N53000001XDDA" rows="3" type="text"></textarea>
+            Elevator Pitch:
+            <textarea id="00N3h00000IszC8" name="00N3h00000IszC8" rows="3" type="text"></textarea><br>
 
-            Elaborate on your business/invention idea (500 words or less)*
-            <textarea required id="00N53000001XDDB" name="00N53000001XDDB" rows="5" type="text"></textarea>
+            Full Business Idea:
+            <textarea id="00N3h00000IszC9" name="00N3h00000IszC9" rows="3"
+                      type="text"></textarea><br>
 
-            How did you come up with this idea? Why is it important to you? (500 words or less)*
-            <textarea required id="00N53000001XDDC" name="00N53000001XDDC" rows="5" type="text"></textarea>
+            How did you come up with this idea?:
+            <textarea id="00N3h00000IszCA" name="00N3h00000IszCA" rows="3"
+                      type="text"></textarea><br>
 
-            If selected, how would the tuition and seed money help you achieve your business goals?*
-            <textarea required id="00N53000001XDDD" name="00N53000001XDDD" rows="5" type="text"></textarea>
+            How would the money help you?:
+            <textarea id="00N3h00000IszCB" name="00N3h00000IszCB" rows="3"
+                      type="text"></textarea><br>
 
             <input class="disclaimer" type="checkbox" id="disclaimer" name="disclaimer" required>
             <label for="disclaimer">
