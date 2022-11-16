@@ -464,14 +464,14 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
 
 /*********************** Tuition Finalists ********************************/
 
-.iphone-x {
+.ipx {
   position: relative;
   z-index: 1;
   height: 694px;
   width: 342px;
 }
 
-.iphone-x .finalists-banner {
+.ipx .f-b {
   position: absolute;
   bottom: -5%;
   z-index: 200;
@@ -480,12 +480,12 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   width: 80%;
 }
 
-.iphone-x *, .iphone-x *::before, .iphone-x *::after {
+.ipx *, .ipx *::before, .ipx *::after {
   box-sizing: border-box;
   display: block;
 }
 
-.iphone-x .side {
+.ipx .s {
   background: #1c1c1c;
   border-radius: 48px;
   box-shadow: inset 0 0 2px 2px #000000, inset 0 0 0 6px #000000, 0 -1px 13px 9px #000000 inset;
@@ -495,7 +495,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   z-index: 1;
 }
 
-.iphone-x .screen {
+.ipx .d {
   background: #000;
   background-position: center center;
   background-size: cover;
@@ -507,13 +507,13 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   overflow: hidden;
 }
 
-.iphone-x iframe {
+.ipx iframe {
   border: none;
   height: 100%;
   width: 100%;
 }
 
-.iphone-x .line::after, .iphone-x .line::before {
+.ipx .l::after, .ipx .l::before {
   content: "";
   position: absolute;
   border: solid rgba(68, 68, 68, 0.25);
@@ -524,15 +524,15 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   z-index: 9;
 }
 
-.iphone-x .line::after {
+.ipx .l::after {
   top: 68px;
 }
 
-.iphone-x .line::before {
+.ipx .l::before {
   bottom: 68px;
 }
 
-.iphone-x .header {
+.ipx .p-h {
   background: #1c1c1c;
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
@@ -545,12 +545,12 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   z-index: 199;
 }
 
-.iphone-x .sensor-1::after, .iphone-x .sensor-1::before {
+.ipx .s-1::after, .ipx .s-1::before {
   content: "";
   position: absolute;
 }
 
-.iphone-x .sensor-1::after {
+.ipx .s-1::after {
   background: #222;
   border-radius: 50%;
   height: 11px;
@@ -560,7 +560,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   top: 3px;
 }
 
-.iphone-x .sensor-1::before {
+.ipx .s-1::before {
   background: #222;
   border-radius: 50%;
   height: 11px;
@@ -570,12 +570,12 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   top: 3px;
 }
 
-.iphone-x .sensor-2::after, .iphone-x .sensor-2::before {
+.ipx .s-2::after, .ipx .s-2::before {
   content: "";
   position: absolute;
 }
 
-.iphone-x .sensor-2::before {
+.ipx .s-2::before {
   background: #333;
   border-radius: 2.5px;
   height: 5px;
@@ -585,12 +585,12 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   top: 7px;
 }
 
-.iphone-x .sensor-3::after, .iphone-x .sensor-3::before {
+.ipx .s-3::after, .ipx .s-3::before {
   content: "";
   position: absolute;
 }
 
-.iphone-x .sensor-3::before {
+.ipx .s-3::before {
   background: #444;
   border-radius: 50%;
   height: 11px;
@@ -601,7 +601,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   box-shadow: 0px 0px 5px 2px navy inset
 }
 
-.iphone-x .sensor-3::after {
+.ipx .s-3::after {
   background: #222;
   border-radius: 50%;
   height: 15px;
@@ -610,7 +610,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   margin-left: 33px;
 }
 
-.iphone-x .volume-button {
+.ipx .v-b {
   background: #000000;
   height: 26px;
   left: -2px;
@@ -619,7 +619,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   width: 3px;
 }
 
-.iphone-x .volume-button::after, .iphone-x .volume-button::before {
+.ipx .v-b::after, .ipx .v-b::before {
   content: "";
   position: absolute;
   background: #000000;
@@ -628,15 +628,15 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   width: 3px;
 }
 
-.iphone-x .volume-button::after {
+.ipx .v-b::after {
   top: 48px;
 }
 
-.iphone-x .volume-button::before {
+.ipx .v-b::before {
   top: 112px;
 }
 
-.iphone-x .power-button {
+.ipx .p-b {
   background: #000000;
   height: 80px;
   right: -2px;
