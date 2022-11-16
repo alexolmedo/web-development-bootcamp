@@ -464,20 +464,34 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
 
 /*********************** Tuition Finalists ********************************/
 
+.tl_content-finalists .slds-gutters.tl_content-block {
+  display: flex;
+}
+
+.c-f {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 560px;
+}
+
+@media (min-width: 1024px) {
+  .c-f {
+    margin-left: 55px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .c-f {
+    margin-left: 115px;
+  }
+}
+
 .ipx {
   position: relative;
   z-index: 1;
   height: 694px;
   width: 342px;
-}
-
-.ipx .f-b {
-  position: absolute;
-  bottom: -5%;
-  z-index: 200;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
+  margin: auto;
 }
 
 .ipx *, .ipx *::before, .ipx *::after {
@@ -485,7 +499,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   display: block;
 }
 
-.ipx .s {
+.ipx > div:nth-child(1) {
   background: #1c1c1c;
   border-radius: 48px;
   box-shadow: inset 0 0 2px 2px #000000, inset 0 0 0 6px #000000, 0 -1px 13px 9px #000000 inset;
@@ -495,7 +509,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   z-index: 1;
 }
 
-.ipx .d {
+.ipx > div:nth-child(1) > div {
   background: #000;
   background-position: center center;
   background-size: cover;
@@ -513,26 +527,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   width: 100%;
 }
 
-.ipx .l::after, .ipx .l::before {
-  content: "";
-  position: absolute;
-  border: solid rgba(68, 68, 68, 0.25);
-  border-width: 0 6px;
-  height: 5px;
-  left: 0;
-  width: 100%;
-  z-index: 9;
-}
-
-.ipx .l::after {
-  top: 68px;
-}
-
-.ipx .l::before {
-  bottom: 68px;
-}
-
-.ipx .p-h {
+.ipx > div:nth-child(2) {
   background: #1c1c1c;
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
@@ -545,37 +540,12 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   z-index: 199;
 }
 
-.ipx .s-1::after, .ipx .s-1::before {
+.ipx > div:nth-child(2) > div::after, .ipx > div:nth-child(2) > div::before {
   content: "";
   position: absolute;
 }
 
-.ipx .s-1::after {
-  background: #222;
-  border-radius: 50%;
-  height: 11px;
-  width: 11px;
-  left: 1%;
-  margin-left: 10px;
-  top: 3px;
-}
-
-.ipx .s-1::before {
-  background: #222;
-  border-radius: 50%;
-  height: 11px;
-  width: 11px;
-  left: 10%;
-  margin-left: 20px;
-  top: 3px;
-}
-
-.ipx .s-2::after, .ipx .s-2::before {
-  content: "";
-  position: absolute;
-}
-
-.ipx .s-2::before {
+.ipx > div:nth-child(2) > div::before {
   background: #333;
   border-radius: 2.5px;
   height: 5px;
@@ -585,32 +555,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   top: 7px;
 }
 
-.ipx .s-3::after, .ipx .s-3::before {
-  content: "";
-  position: absolute;
-}
-
-.ipx .s-3::before {
-  background: #444;
-  border-radius: 50%;
-  height: 11px;
-  width: 11px;
-  left: 50%;
-  margin-left: 35px;
-  top: 3px;
-  box-shadow: 0px 0px 5px 2px navy inset
-}
-
-.ipx .s-3::after {
-  background: #222;
-  border-radius: 50%;
-  height: 15px;
-  width: 15px;
-  left: 65%;
-  margin-left: 33px;
-}
-
-.ipx .v-b {
+.ipx > div:nth-child(3) {
   background: #000000;
   height: 26px;
   left: -2px;
@@ -619,7 +564,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   width: 3px;
 }
 
-.ipx .v-b::after, .ipx .v-b::before {
+.ipx > div:nth-child(3)::after, .ipx > div:nth-child(3)::before {
   content: "";
   position: absolute;
   background: #000000;
@@ -628,21 +573,30 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   width: 3px;
 }
 
-.ipx .v-b::after {
+.ipx > div:nth-child(3)::after {
   top: 48px;
 }
 
-.ipx .v-b::before {
+.ipx > div:nth-child(3)::before {
   top: 112px;
 }
 
-.ipx .p-b {
+.ipx > div:nth-child(4) {
   background: #000000;
   height: 80px;
   right: -2px;
   position: absolute;
   top: 160px;
   width: 3px;
+}
+
+.ipx > img {
+  position: absolute;
+  bottom: -5%;
+  z-index: 200;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80% !important;
 }
 
 /*********************** Tuition Finalists ********************************/
