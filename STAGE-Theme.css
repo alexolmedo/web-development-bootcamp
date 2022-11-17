@@ -464,6 +464,25 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
 
 /*********************** Tuition Finalists ********************************/
 
+@media (max-width: 767px) {
+  body.comm-page-custom-tuition-finalists .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    align-items: end;
+  }
+
+  body.comm-page-custom-tuition-finalists .kdp-hero .content[c-kdpHeroBase_kdpHeroBase] {
+    padding: 0 !important;
+  }
+
+  body.comm-page-custom-tuition-finalists .contentBranding_column[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase] {
+    width: 170px !important;
+    height: auto !important;
+  }
+
+  body.comm-page-custom-tuition-finalists .kdp-hero-bg {
+    background-position: center right !important;
+  }
+}
+
 .tl_content-finalists .slds-gutters.tl_content-block {
   display: flex;
 }
@@ -473,15 +492,16 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
 }
 
 .tl_content-finalists > div:nth-child(1) {
-  text-align: center;
+  text-align: left;
   font-family: "Aktiv Grotesk", sans-serif;
   font-size: 16px;
-  line-height: 20;
+  line-height: 20px;
   padding: 0 0 45px;
 }
 
 @media (min-width: 768px) {
   .tl_content-finalists > div:nth-child(1) {
+    text-align: center;
     font-size: 22px;
     line-height: 28px;
   }
@@ -493,18 +513,30 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   max-width: 560px;
 }
 
+.c-f h2 {
+  line-height: 22px !important;
+  text-align: left;
+  padding-top: 10px;
+}
+
 .c-f h3 {
   font-family: "Aktiv Grotesk", sans-serif;
   font-size: 16px !important;
   line-height: 24px !important;
+  text-align: left;
+  text-transform: none;
 }
 
 @media (min-width: 768px) {
+  .c-f h2 {
+    line-height: 36px !important;
+    padding-top: 0;
+  }
+
   .c-f h3 {
     font-family: "Aktiv Grotesk", sans-serif;
     font-size: 28px !important;
     line-height: 33px !important;
-    text-transform: none;
   }
 }
 
@@ -553,6 +585,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   width: auto;
   z-index: 198;
   overflow: hidden;
+  padding-top: 5px;
 }
 
 .ipx iframe {
