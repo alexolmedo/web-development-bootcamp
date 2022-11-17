@@ -499,12 +499,45 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   padding: 0 0 45px;
 }
 
+body.comm-page-custom-tuition-finalists .tuition-footer {
+  padding-top: 30px;
+}
+
+body.comm-page-custom-tuition-finalists .tuition-footer h2 {
+  line-height: 1.5 !important;
+}
+
+body.comm-page-custom-tuition-finalists .tuition-footer .btn-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+body.comm-page-custom-tuition-finalists .tuition-footer .button-primary {
+  margin-top: 15px;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  line-height: 1;
+}
+
 @media (min-width: 768px) {
   .tl_content-finalists > div:nth-child(1) {
     text-align: center;
     font-size: 22px;
     line-height: 28px;
   }
+
+  body.comm-page-custom-tuition-finalists .tuition-footer h2 {
+    text-align: center;
+    line-height: 1.2 !important;
+  }
+
+  body.comm-page-custom-tuition-finalists .tuition-footer .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 .c-f {
