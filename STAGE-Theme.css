@@ -477,7 +477,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   font-family: "Aktiv Grotesk", sans-serif;
   font-size: 16px;
   line-height: 20;
-  padding: 0 0 30px;
+  padding: 0 0 45px;
 }
 
 @media (min-width: 768px) {
@@ -516,7 +516,7 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
 
 @media (min-width: 1440px) {
   .c-f {
-    margin-left: 115px;
+    margin-left: 80px;
   }
 }
 
