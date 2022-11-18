@@ -573,7 +573,7 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
 }*/
 
 /************************************** Custom styles for Football Campaign Homepage & Rewards *************************************/
-body.comm-page-home .kdp-hero-bg {
+/* body.comm-page-home .kdp-hero-bg {
   background: url(https://www.drpepper.com/cms/delivery/media/MC4DSUG3DSRRFPXMFIYTSFEM4CJU), #a51d31 !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -617,7 +617,7 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
     width: 100% !important;
   }
 }
-
+*/
 /* Foam Finger Warehouse campaign */
 
 .comm-page-custom-fansville-foam-finger-warehouse video.video-wrapper[c-kdpHeroBase_kdpHeroBase] {
@@ -763,6 +763,10 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
 
 .comm-page-custom-out-of-stock .container {
   display: none;
+}
+
+.comm-page-custom-tuition .cb-section_column {
+  padding: 0 !important;
 }
 
 .comm-page-custom-tuition-form .container {
@@ -928,3 +932,13 @@ body.comm-page-custom-hailmary ul li span {
 }
 
 /**** HAIL MARY STYLING ENDS ****/
+
+/**** Fansville Reserve STYLING START ****/
+@media (max-width: 767px) {
+  body.comm-page-home .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase], body.comm-page-custom-rewards .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
+    align-items: end;
+    padding-bottom: 2rem;
+  }
+}
+
+/**** Fansville Reserve STYLING ENDS ****/
