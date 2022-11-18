@@ -192,17 +192,11 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
 }*/
 
 /************************************** Custom styles for Football Campaign Homepage & Rewards *************************************/
-/*body.comm-page-home .kdp-hero-bg {*/
-/*  background: url(https://stg-my.drpepper.com/cms/delivery/media/MCXO5IG4YWXFB3VC6CRV2QIV3WVI), #a51d31 !important;*/
-/*  background-repeat: no-repeat !important;*/
-/*  background-size: cover !important;*/
-/*  background-position: top left !important;*/
-/*}*/
-
-@media (max-width: 767px) {
-  body.comm-page-home .kdp-hero-bg {
-    background-position: center right !important;
-  }
+body.comm-page-home .kdp-hero-bg {
+  background: url(https://stg-my.drpepper.com/cms/delivery/media/MCXO5IG4YWXFB3VC6CRV2QIV3WVI), #a51d31 !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top left !important;
 }
 
 body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kdpherobase_kdpherobase] {
@@ -210,13 +204,13 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
 }
 
 @media (max-width: 579px) {
-  /*body.comm-page-home .kdp-hero-bg {*/
-  /*  background-size: contain !important;*/
-  /*  background: url(https://stg-my.drpepper.com/cms/delivery/media/MCUZU7MG2I3VGORMKWDM3Y4LIAFY), #a51d31 !important;*/
-  /*  background-repeat: no-repeat !important;*/
-  /*  background-size: contain !important;*/
-  /*  background-position: top center !important;*/
-  /*}*/
+  body.comm-page-home .kdp-hero-bg {
+    background-size: contain !important;
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MCUZU7MG2I3VGORMKWDM3Y4LIAFY), #a51d31 !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: top center !important;
+  }
 
   body.comm-page-custom-rewards .contentBranding_column[c-kdpherobase_kdpherobase] img[c-kdpherobase_kdpherobase] {
     height: auto !important;
@@ -230,12 +224,12 @@ body.comm-page-home a.kdp-button.button-secondary.primary-cta.slds-truncate[c-kd
 }
 
 @media (min-width: 580px) and (max-width: 768px) {
-  /*body.comm-page-home .kdp-hero-bg {*/
-  /*  background: url(https://stg-my.drpepper.com/cms/delivery/media/MCUZU7MG2I3VGORMKWDM3Y4LIAFY), #a51d31 !important;*/
-  /*  background-repeat: no-repeat !important;*/
-  /*  background-size: cover !important;*/
-  /*  background-position: top center !important;*/
-  /*}*/
+  body.comm-page-home .kdp-hero-bg {
+    background: url(https://stg-my.drpepper.com/cms/delivery/media/MCUZU7MG2I3VGORMKWDM3Y4LIAFY), #a51d31 !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top center !important;
+  }
 
   body.comm-page-home .contentBranding_row[c-kdpHeroBase_kdpHeroBase] img[c-kdpHeroBase_kdpHeroBase] {
     height: auto !important;
@@ -835,15 +829,15 @@ body.comm-page-custom-hailmary ul li span {
 /*************************************** START - Custom styles for Fansville Reserve ******************************************/
 
 @media (max-width: 767px) {
-  body.comm-page-home .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase], body.comm-page-custom-rewards .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {
-    align-items: end;
-    padding-bottom: 2rem;
-  }
+  /*body.comm-page-home .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase], body.comm-page-custom-rewards .kdp-hero[c-kdpHeroBase_kdpHeroBase] > .container[c-kdpHeroBase_kdpHeroBase] {*/
+  /*  align-items: end;*/
+  /*  padding-bottom: 2rem;*/
+  /*}*/
 
-  body.comm-page-home .kdp-hero-bg[c-kdpHeroBase_kdpHeroBase] {
-    background-color: black !important;
-    /*background-size: contain !important;*/
-  }
+  /*body.comm-page-home .kdp-hero-bg[c-kdpHeroBase_kdpHeroBase] {*/
+  /*  background-color: black !important;*/
+  /*  !*background-size: contain !important;*!*/
+  /*}*/
 
   /*body.comm-page-custom-rewards .kdp-hero-bg[c-kdpHeroBase_kdpHeroBase] {
       background-size: contain !important;
