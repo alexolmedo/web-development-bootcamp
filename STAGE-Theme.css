@@ -499,6 +499,10 @@ body.comm-page-custom-hailmary .kdp-hero-bg {
   padding: 0 0 45px;
 }
 
+body.comm-page-custom-tuition-finalists .tabContent[c-tabContent_tabContent] h2[c-tabContent_tabContent] {
+  color: #900D2C !important;
+}
+
 body.comm-page-custom-tuition-finalists .tuition-footer {
   padding-top: 30px;
 }
@@ -692,7 +696,7 @@ body.comm-page-custom-tuition-finalists .tuition-footer .button-primary {
 
 .ipx > img {
   position: absolute;
-  bottom: -5%;
+  bottom: -50px;
   z-index: 200;
   left: 50%;
   transform: translateX(-50%);
