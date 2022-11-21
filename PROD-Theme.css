@@ -928,3 +928,246 @@ body.comm-page-custom-hailmary ul li span {
 }
 
 /**** HAIL MARY STYLING ENDS ****/
+
+/*********************** Tuition Finalists ********************************/
+
+@media (max-width: 767px) {
+  body.comm-page-custom-tuition-finalists .kdp-hero[c-kdpherocomponent_kdpherocomponent] > .container[c-kdpherocomponent_kdpherocomponent] {
+    align-items: end;
+  }
+
+  body.comm-page-custom-tuition-finalists .kdp-hero .content[c-kdpherocomponent_kdpherocomponent] {
+    padding: 0 !important;
+  }
+
+  body.comm-page-custom-tuition-finalists .contentBranding_undefined[c-kdpherocomponent_kdpherocomponent] img[c-kdpherocomponent_kdpherocomponent] {
+    width: 170px !important;
+    height: auto !important;
+  }
+
+  body.comm-page-custom-tuition-finalists .kdp-hero-bg {
+    background-position: center right !important;
+  }
+}
+
+.tl_content-finalists .slds-gutters.tl_content-block {
+  display: flex;
+}
+
+.tl_content-finalists {
+  padding-top: 0 !important;
+}
+
+.tl_content-finalists > div:nth-child(1) {
+  text-align: left;
+  font-family: "Aktiv Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 0 45px;
+}
+
+body.comm-page-custom-tuition-finalists .tabContent[c-tabContent_tabContent] h2[c-tabContent_tabContent] {
+  color: #900D2C !important;
+}
+
+body.comm-page-custom-tuition-finalists .tuition-footer {
+  padding-top: 30px;
+}
+
+body.comm-page-custom-tuition-finalists .tuition-footer h2 {
+  line-height: 1.5 !important;
+}
+
+body.comm-page-custom-tuition-finalists .tuition-footer .btn-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+body.comm-page-custom-tuition-finalists .tuition-footer .button-primary {
+  margin-top: 15px;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .tl_content-finalists > div:nth-child(1) {
+    text-align: center;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  body.comm-page-custom-tuition-finalists .tuition-footer h2 {
+    text-align: center;
+    line-height: 1.2 !important;
+  }
+
+  body.comm-page-custom-tuition-finalists .tuition-footer .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.c-f {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 560px;
+}
+
+.c-f h2 {
+  line-height: 22px !important;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.c-f h3 {
+  font-family: "Aktiv Grotesk", sans-serif;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  text-align: left;
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .c-f h2 {
+    line-height: 36px !important;
+    padding-top: 0;
+  }
+
+  .c-f h3 {
+    font-family: "Aktiv Grotesk", sans-serif;
+    font-size: 28px !important;
+    line-height: 33px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-f {
+    margin-left: 55px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .c-f {
+    margin-left: 80px;
+  }
+}
+
+.ipx {
+  position: relative;
+  z-index: 1;
+  height: 694px;
+  width: 342px;
+  margin: auto;
+}
+
+.ipx *, .ipx *::before, .ipx *::after {
+  box-sizing: border-box;
+  display: block;
+}
+
+.ipx > div:nth-child(1) {
+  background: #1c1c1c;
+  border-radius: 48px;
+  box-shadow: inset 0 0 2px 2px #000000, inset 0 0 0 6px #000000, 0 -1px 13px 9px #000000 inset;
+  height: 684px;
+  padding: 15px;
+  width: 342px;
+  z-index: 1;
+}
+
+.ipx > div:nth-child(1) > div {
+  background: #000;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 33px;
+  position: relative;
+  height: 100%;
+  width: auto;
+  z-index: 198;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.ipx iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.ipx > div:nth-child(2) {
+  background: #1c1c1c;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  height: 24px;
+  left: 50%;
+  margin-left: -82px;
+  position: absolute;
+  top: 15px;
+  width: 164px;
+  z-index: 199;
+}
+
+.ipx > div:nth-child(2) > div::after, .ipx > div:nth-child(2) > div::before {
+  content: "";
+  position: absolute;
+}
+
+.ipx > div:nth-child(2) > div::before {
+  background: #333;
+  border-radius: 2.5px;
+  height: 5px;
+  width: 40px;
+  left: 50%;
+  margin-left: -20px;
+  top: 7px;
+}
+
+.ipx > div:nth-child(3) {
+  background: #000000;
+  height: 26px;
+  left: -2px;
+  position: absolute;
+  top: 92px;
+  width: 3px;
+}
+
+.ipx > div:nth-child(3)::after, .ipx > div:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background: #000000;
+  height: 50px;
+  left: 0;
+  width: 3px;
+}
+
+.ipx > div:nth-child(3)::after {
+  top: 48px;
+}
+
+.ipx > div:nth-child(3)::before {
+  top: 112px;
+}
+
+.ipx > div:nth-child(4) {
+  background: #000000;
+  height: 80px;
+  right: -2px;
+  position: absolute;
+  top: 160px;
+  width: 3px;
+}
+
+.ipx > img {
+  position: absolute;
+  bottom: -50px;
+  z-index: 200;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80% !important;
+}
+
+/*********************** Tuition Finalists ********************************/
